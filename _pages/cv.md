@@ -9,7 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vQRi-VLufDhINf8LIKuDaDa7wFYkPsQGWWogwzDZB6ha-ajDYCZfMwvjzvX5iSOn-zE9ebO6-lDCYAz/pub?embedded=true" frameborder="0" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<!-- Education
 ======
 * B.S. in GitHub, GitHub University, 2012
 * M.S. in Jekyll, GitHub University, 2014
@@ -40,7 +42,7 @@ Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 Talks
 ======
