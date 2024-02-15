@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vT8zqwSY0-6zWQie3xC71ysRDN0XFfHbGmiRGAfA3QpI-s-fMx4UyHn7oTHGLLcLx4qT2YJoamo2N7R/pub?embedded=true" frameborder="0" width="100%" height="750px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vT8zqwSY0-6zWQie3xC71ysRDN0XFfHbGmiRGAfA3QpI-s-fMx4UyHn7oTHGLLcLx4qT2YJoamo2N7R/pub?embedded=true" frameborder="0" width="100%" height="750px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 
 <!-- Education
 ======
@@ -44,7 +44,7 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
   
-Talks
+<!-- Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
@@ -54,7 +54,7 @@ Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
   
 <!-- Service and leadership
 ======
