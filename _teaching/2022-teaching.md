@@ -4,7 +4,7 @@ collection: teaching
 type: "Course"
 permalink: /teaching/2022-teaching
 venue: "Online"
-date: 2021-01-01
+date: 2022-10-03
 location: "Zoom"
 ---
 
@@ -111,12 +111,6 @@ Heading 1
 How to Reduce the Costs of LLMs
 
 
-[Watch the Recording](https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L)
-
-<a href="https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L">
-  <img src="https://raw.githubusercontent.com/Ruqyai/ruqyai.github.io/main/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
-</a>
-
 ## The Presentation
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQbFKWj5GKIs2kL9peAoXMU93-0QeiSjMa3HcoUMBAhZToy95qo3dutOY5gRbrs7W2s3WAzwy_EBlyU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -129,12 +123,6 @@ Heading 2
 How to Reduce the Costs of LLMs
 
 
-[Watch the Recording](https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L)
-
-<a href="https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L">
-  <img src="https://raw.githubusercontent.com/Ruqyai/ruqyai.github.io/main/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
-</a>
-
 ## The Presentation
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRDq-Yxg-Ce9t6c4txCcm5Q-EXBhNf7mEyXla0-DRiRt7ivoOo2FexTwzsSGehUnlnT98gcSZAPgz10/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -146,12 +134,6 @@ Heading 3
 
 How to Reduce the Costs of LLMs
 
-
-[Watch the Recording](https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L)
-
-<a href="https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L">
-  <img src="https://raw.githubusercontent.com/Ruqyai/ruqyai.github.io/main/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
-</a>
 
 ## The Presentation
 
