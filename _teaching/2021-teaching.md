@@ -28,7 +28,7 @@ A course on deep learning methods with applications to computer vision, natural 
 | Natural Language Processing | [YouTube](https://youtu.be/WlmCTTQbGhg) | [Slides]( https://bit.ly/3pyUxSK) | [![alt text](https://camo.githubusercontent.com/f5e0d0538a9c2972b5d413e0ace04cecd8efd828d133133933dfffec282a4e1b/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667)](https://colab.research.google.com/github/Ruqyai/MENADD-DL/blob/main/RNN/Arabic_Poems_Generator.ipynb) |
 
 
-
+<!-- 
 Heading 1
 ======
 
@@ -80,5 +80,5 @@ How to Reduce the Costs of LLMs
 
 ## The Presentation
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRDq-Yxg-Ce9t6c4txCcm5Q-EXBhNf7mEyXla0-DRiRt7ivoOo2FexTwzsSGehUnlnT98gcSZAPgz10/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRDq-Yxg-Ce9t6c4txCcm5Q-EXBhNf7mEyXla0-DRiRt7ivoOo2FexTwzsSGehUnlnT98gcSZAPgz10/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="400px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
 
