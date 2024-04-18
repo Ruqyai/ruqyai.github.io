@@ -53,10 +53,10 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 * **LIBF:** Master of Science - MS, Artificial Intelligence (Dec 2023 - May 2025) (Expected) 
 * **Saudi Electronic University:** Bachelor's degree, Information Technology (2013 - 2018) 
 
-**Volunteering** (Select relevant experiences for the specific application) 
+**Volunteering**  
 
 * **Google Developer Experts:** Machine Learning Expert (Oct 2020 - Present)
-* **Google Cloud Skills Boost:** Google Cloud Champion Innovators (Dec 2022 - Present)
+* **Google Cloud Champion Innovator:**  (Dec 2022 - Present)
 * **Google for Startups Accelerator MENA:** Mentor (Jan 2021 - Dec 2023) 
 * **Omdena UAE Chapter:** MLOps [Co-Lead Task] (Sep 2023 - Oct 2023)
 * **Fihm.ai:** Member (Feb 2020 - Present)
@@ -64,8 +64,6 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 * **Women in Data Science (WiDS) at Stanford University:** Ambassador (Dec 2020 - Dec 2023)
 * **Women Techmakers:** Ambassador (Jan 2020 - Present) 
 * **GDG Cloud Saudi:** Co-Organizer (Mar 2019 - Sep 2023)
-* **GCDC Saudi Arabia:** Trainer (Mar 2019 - Dec 2023)
-* **Google Developers Group:** Machine Learning workshops 
 * **WTM Saudi Arabia:** Leader (Oct 2019 - Jan 2024) 
 * **Fintech Accelerator Program & Hackathon:** Mentor (Aug 2019 - Nov 2019) 
 
