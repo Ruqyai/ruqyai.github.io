@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Ruqiya Bin Safi is an AI Engineer fascinated by the potential of AI to solve real-world challenges. She enjoys working on diverse projects, ranging from developing AI products to contributing to Arabic NLP initiatives and exploring the possibilities of generative AI.
+Ruqiya Bin Safi is a  Senior AI Engineer fascinated by the potential of AI to solve real-world challenges. She enjoys working on diverse projects, ranging from developing AI products to contributing to Arabic NLP initiatives and exploring the possibilities of generative AI.
 
 A lifelong learner driven by curiosity, Ruqiya actively seeks opportunities to expand her knowledge and skillset. This includes staying updated on the latest advancements in the field, experimenting with different AI technologies, and continuously honing her expertise in all aspects of AI projects.
 
