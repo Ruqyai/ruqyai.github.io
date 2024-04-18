@@ -9,7 +9,66 @@ redirect_from:
 
 {% include base_path %}
 
-<!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vT8zqwSY0-6zWQie3xC71ysRDN0XFfHbGmiRGAfA3QpI-s-fMx4UyHn7oTHGLLcLx4qT2YJoamo2N7R/pub?embedded=true" frameborder="0" width="100%" height="750px" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+**Summary**
+
+A highly motivated and accomplished Senior AI Engineer with extensive expertise in Deep Learning, Generative AI, and Arabic Natural Language Processing (NLP). Proven track record of successfully leading and contributing to the development of innovative AI-powered products, leveraging cutting-edge technologies like LLMs, LangChain, and Retrieval Augmented Generation (RAG). Passionate about advancing Arabic NLP and Generative AI applications, and actively involved in the AI community through mentorship and knowledge sharing initiatives.
+
+**Experience**
+
+**Fyler** (Sep 2023 - Present) - Dubai, UAE
+
+* **Senior AI Engineer (Feb 2024 - Present):** Developing an AI-based search engine for the MENA region.
+* **AI Engineer (Sep 2023 - Feb 2024):** Developed innovative products using LLMs, NLP, and LangChain. 
+
+**Success Partners** (Apr 2021 - Jan 2022)
+
+* **Chief Executive Officer:** Led teams of 45 people to implement technical hackathons and provide other services, gaining diverse skills in a startup environment.
+
+**Bayan (Data science & Artificial intelligence)** (Jul 2020 - Jan 2022)
+
+* **Research And Development Member:** Participated in projects including Twitter social network analysis during the pandemic, Hajj 2021 tweets analysis, and Twitter sentiment analysis about school reopening.
+
+**Techie bits** (Jul 2020 - Jan 2022)
+
+* **Data Science and AI/ML Consultant** 
+
+**CODE FOR GIRLS** (May 2020 - Jan 2022) 
+
+* **AI and Data Science Instructor**
+
+**Self Employed** (Mar 2019 - Jan 2022)
+
+* **Freelance:** Worked on Data Science, Artificial Intelligence, and Machine Learning projects, including object detection, face recognition, time series, text classification, and Twitter NLP. 
+
+**Upwork** (Mar 2018 - Apr 2019)
+
+* **Freelance Developer:** Worked on websites and mobile apps using Android, WordPress, Rest API, Laravel Framework, and Flask Framework.
+
+**Classera** (Jul 2017 - Aug 2017)
+
+* **Summer Internship Program:** Migrated Classera functions into API, prepared presentations and research on e-learning solutions, and delivered a web view Classera Exams using HTML, CSS, and JavaScript.
+
+**Education**
+
+* **LIBF:** Master of Science - MS, Artificial Intelligence (Dec 2023 - May 2025) (Expected) 
+* **Saudi Electronic University:** Bachelor's degree, Information Technology (2013 - 2018) 
+
+**Volunteering** (Select relevant experiences for the specific application) 
+
+* **Google Developer Experts:** Machine Learning Expert (Oct 2020 - Present)
+* **Google Cloud Skills Boost:** Google Cloud Champion Innovators (Dec 2022 - Present)
+* **Google for Startups Accelerator MENA:** Mentor (Jan 2021 - Dec 2023) 
+* **Omdena UAE Chapter:** MLOps [Co-Lead Task] (Sep 2023 - Oct 2023)
+* **Fihm.ai:** Member (Feb 2020 - Present)
+* **TFUG-Saudi:** Co-Founder (Jan 2021 - Present) 
+* **Women in Data Science (WiDS) at Stanford University:** Ambassador (Dec 2020 - Dec 2023)
+* **Women Techmakers:** Ambassador (Jan 2020 - Present) 
+* **GDG Cloud Saudi:** Co-Organizer (Mar 2019 - Sep 2023)
+* **GCDC Saudi Arabia:** Trainer (Mar 2019 - Dec 2023)
+* **Google Developers Group:** Machine Learning workshops 
+* **WTM Saudi Arabia:** Leader (Oct 2019 - Jan 2024) 
+* **Fintech Accelerator Program & Hackathon:** Mentor (Aug 2019 - Nov 2019) 
+
 
 <!-- Education
 ======
