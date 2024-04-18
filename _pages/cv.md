@@ -15,7 +15,7 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 
 **Experience**
 
-**Fyler** (Sep 2023 - Present) - Dubai, UAE
+**Fyler** (Sep 2023 - Present) 
 
 * **Senior AI Engineer (Feb 2024 - Present):** Developing an AI-based search engine for the MENA region.
 * **AI Engineer (Sep 2023 - Feb 2024):** Developed innovative products using LLMs, NLP, and LangChain. 
