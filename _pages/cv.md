@@ -48,12 +48,8 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 
 * **Summer Internship Program:** Migrated Classera functions into API, prepared presentations and research on e-learning solutions, and delivered a web view Classera Exams using HTML, CSS, and JavaScript.
 
-**Education**
 
-* **LIBF:** Master of Science - MS, Artificial Intelligence (Dec 2023 - May 2025) (Expected) 
-* **Saudi Electronic University:** Bachelor's degree, Information Technology (2013 - 2018) 
-
-**Volunteering**  
+**Volunteering Experience**  
 
 * **Google Developer Experts:** Machine Learning Expert (Oct 2020 - Present)
 * **Google Cloud Champion Innovator:**  (Dec 2022 - Present)
@@ -66,6 +62,20 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 * **GDG Cloud Saudi:** Co-Organizer (Mar 2019 - Sep 2023)
 * **WTM Saudi Arabia:** Leader (Oct 2019 - Jan 2024) 
 * **Fintech Accelerator Program & Hackathon:** Mentor (Aug 2019 - Nov 2019) 
+
+**Education**
+
+* **LIBF:** Master of Science - MS, Artificial Intelligence (Dec 2023 - May 2025) (Expected) 
+* **Saudi Electronic University:** Bachelor's degree, Information Technology (2013 - 2018) 
+
+**Core Skills**
+
+* **Generative AI & LLMs:** Expertise in leveraging Large Language Models (LLMs) for applications like text generation, translation, and chatbot development. Proficient in LangChain and Retrieval Augmented Generation (RAG) for advanced LLM implementations.
+* **Arabic NLP:** Deep understanding and experience in developing NLP solutions for the Arabic language, including text classification, sentiment analysis, and named entity recognition.
+* **Machine Learning & Deep Learning:** Solid foundation in machine learning and deep learning algorithms, with experience in building and deploying models for various tasks.
+* **Data Science & Analysis:** Proficient in data collection, processing, and analysis techniques, with the ability to extract meaningful insights from complex datasets.
+* **Project Management & Leadership:** Successfully led teams in developing and delivering AI solutions, demonstrating strong organizational and communication skills.
+
 
 
 <!-- Education
