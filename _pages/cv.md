@@ -52,7 +52,7 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 
 **Community Experiences**  
 
-* **Google Developer Experts:** Machine Learning Expert (Oct 2020 - Present)
+* **Google Developer Expert in AI/ML:** Google developer expert in Artificial Intelligence/Machine Learning (Oct 2020 - Present)
 * **Google Cloud Champion Innovator:**  (Dec 2022 - Present)
 * **Google for Startups Accelerator MENA:** Mentor (Jan 2021 - Dec 2023) 
 * **Omdena UAE Chapter:** MLOps [Co-Lead Task] (Sep 2023 - Oct 2023)
