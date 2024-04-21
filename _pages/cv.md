@@ -40,11 +40,15 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 
 * **Freelance:** Worked on Data Science, Artificial Intelligence, and Machine Learning projects, including object detection, face recognition, time series, text classification, and Twitter NLP. Additionally, I have experience in website and mobile development.
 
-**Classera** (Jul 2017 - Aug 2017 | Jul 2019 - Aug 2019)
+**Classera**  (Jul 2017 - Aug 2017; Jul 2019 - Aug 2019)
 
-* **Summer Internship Program(2017):** Migrated Classera functions into API, prepared presentations and research on e-learning solutions, and delivered a web view Classera Exams using HTML, CSS, and JavaScript.
+* **Summer Internship Program (2017):**
+    * Migrated Classera functions into API.
+    * Prepared presentations and conducted research on e-learning solutions.
+    * Developed a webpage of Classera Exams using HTML, CSS, and JavaScript.
 
-* **Mentor for Summer Internship Program(2019):** Support and mentoring Summer Internship Program 2019.
+* **Summer Internship Program Mentor (2019):**
+    * Provided support and guidance to trainees in the Summer Internship Program.
 
 
 
