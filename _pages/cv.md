@@ -50,8 +50,6 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 * **Summer Internship Program Mentor (2019):**
     * Provided support and guidance to trainees in the Summer Internship Program.
 
-
-
 **Community Experiences**  
 
 * **Google Developer Experts:** Machine Learning Expert (Oct 2020 - Present)
