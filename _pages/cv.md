@@ -36,20 +36,16 @@ A highly motivated and accomplished Senior AI Engineer with extensive expertise 
 
 * **AI and Data Science Instructor**
 
-**Self Employed** (Mar 2019 - Jan 2022)
+**Self Employed** (Mar 2018 - Jan 2022)
 
-* **Freelance:** Worked on Data Science, Artificial Intelligence, and Machine Learning projects, including object detection, face recognition, time series, text classification, and Twitter NLP. 
-
-**Upwork** (Mar 2018 - Apr 2019)
-
-* **Freelance Developer:** Worked on websites and mobile apps using Android, WordPress, Rest API, Laravel Framework, and Flask Framework.
+* **Freelance:** Worked on Data Science, Artificial Intelligence, and Machine Learning projects, including object detection, face recognition, time series, text classification, and Twitter NLP. Additionally, I have experience in website and mobile development.
 
 **Classera** (Jul 2017 - Aug 2017)
 
 * **Summer Internship Program:** Migrated Classera functions into API, prepared presentations and research on e-learning solutions, and delivered a web view Classera Exams using HTML, CSS, and JavaScript.
 
 
-**Volunteering Experience**  
+**Community Experiences**  
 
 * **Google Developer Experts:** Machine Learning Expert (Oct 2020 - Present)
 * **Google Cloud Champion Innovator:**  (Dec 2022 - Present)
