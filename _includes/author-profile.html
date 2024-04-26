@@ -118,6 +118,12 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
+      {% if author.huggingface %}
+      <li><a href="https://huggingface.co/{{ author.huggingface }}"><i class="fa-light fa-face-smiling-hands" aria-hidden="true"></i> Hugging Face</a></li>
+      {% endif %}
+      {% if author.kaggle %}
+      <li><a href="https://huggingface.co/{{ author.kaggle }}"><i class="fab fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+      {% endif %}
       {% if author.Certificates %}
       <li><a href="{{ author.Certificates }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-certificate" aria-hidden="true"></i> Certificates</a></li>
       {% endif %}
