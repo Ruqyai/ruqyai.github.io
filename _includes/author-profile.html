@@ -124,6 +124,9 @@
       {% if author.kaggle %}
       <li><a href="https://www.kaggle.com/{{ author.kaggle }}"target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
       {% endif %}
+      {% if author.cloud %}
+      <li><a href="{{ author.cloud }}"target="_blank" rel="noopener noreferrer"><i class="fa fa-cloud" aria-hidden="true"></i> Cloud Skills</a></li>
+      {% endif %}
       {% if author.Certificates %}
       <li><a href="{{ author.Certificates }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-certificate" aria-hidden="true"></i> Certificates</a></li>
       {% endif %}
