@@ -49,6 +49,9 @@
       {% if author.facebook %}
         <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
       {% endif %}
+      {% if author.kaggle %}
+      <li><a href="https://www.kaggle.com/{{ author.kaggle }}"target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
+      {% endif %}
       {% if author.google_plus %}
         <li><a href="{{ author.google_plus }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-fw fa-google" aria-hidden="true"></i> Google Dev</a></li>
       {% endif %}
@@ -120,9 +123,6 @@
       {% endif %}
       {% if author.huggingface %}
       <li><a href="https://huggingface.co/{{ author.huggingface }}"target="_blank" rel="noopener noreferrer"><i class="fa fa-user-circle" aria-hidden="true"></i> Hugging Face</a></li>
-      {% endif %}
-      {% if author.kaggle %}
-      <li><a href="https://www.kaggle.com/{{ author.kaggle }}"target="_blank" rel="noopener noreferrer"><i class="fab fa-kaggle" aria-hidden="true"></i> Kaggle</a></li>
       {% endif %}
       {% if author.cloud %}
       <li><a href="{{ author.cloud }}"target="_blank" rel="noopener noreferrer"><i class="fa fa-cloud" aria-hidden="true"></i> Cloud Skills</a></li>
