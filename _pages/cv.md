@@ -11,7 +11,7 @@ redirect_from:
 
 **Summary**
 
-A highly motivated and accomplished Senior AI Engineer with extensive expertise in Deep Learning, Generative AI, and Arabic Natural Language Processing (NLP). Proven track record of successfully leading and contributing to the development of innovative AI-powered products, leveraging cutting-edge technologies like LLMs, LangChain, and Retrieval Augmented Generation (RAG). Passionate about advancing Arabic NLP and Generative AI applications, and actively involved in the AI community through mentorship and knowledge sharing initiatives.
+A Senior AI Engineer and Google Developer Expert in the fields of Artificial Intelligence and Machine Learning. Driven by a love for adventure and exploration, she is committed to self-learning in the areas of deep learning, generative AI, and Arabic Natural Language Processing (NLP). She has a proven track record in leading teams and contributing to the community. In her current role, she is focused on developing innovative AI-powered products by leveraging the latest technologies such as Large Language Models (LLMs), LangChain, and Retrieval-Augmented Generation (RAG). She demonstrates a passion for advancing Arabic NLP applications and generative AI, and actively participates in the AI community through mentorship and knowledge-sharing initiatives.
 
 **Experience**
 
