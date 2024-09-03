@@ -75,7 +75,7 @@ A Senior AI Engineer and Google Developer Expert in the fields of Artificial Int
 * **Arabic NLP:** Deep understanding and experience in developing NLP solutions for the Arabic language, including text classification, sentiment analysis, and named entity recognition.
 * **Machine Learning & Deep Learning:** Solid foundation in machine learning and deep learning algorithms, with experience in building and deploying models for various tasks.
 * **Data Science & Analysis:** Proficient in data collection, processing, and analysis techniques, with the ability to extract meaningful insights from complex datasets.
-* **Project Management & Leadership:** Successfully led teams in developing and delivering AI solutions, demonstrating strong organizational and communication skills.
+* **Project Management & Leadership:** Successfully led teams, demonstrating strong organizational and communication skills.
 
 
 
