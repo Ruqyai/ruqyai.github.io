@@ -4,9 +4,9 @@
 {% endcomment %}
 {% include base_path %}
 {% if page.lang == "ar" %}
-  {% assign L_verified = "موثّقة" %}{% assign L_verify = "التحقق في Accredible" %}{% assign L_close = "إغلاق" %}{% assign L_open = "عرض الشهادة" %}
+  {% assign L_verified = "موثّقة" %}{% assign L_verify = "المصدر" %}{% assign L_close = "إغلاق" %}{% assign L_open = "عرض الشهادة" %}
 {% else %}
-  {% assign L_verified = "Verified" %}{% assign L_verify = "Verify on Accredible" %}{% assign L_close = "Close" %}{% assign L_open = "View certificate" %}
+  {% assign L_verified = "Verified" %}{% assign L_verify = "Source" %}{% assign L_close = "Close" %}{% assign L_open = "View certificate" %}
 {% endif %}
 {% assign certs = site.data.certificates %}
 <div class="certs">

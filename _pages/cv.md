@@ -35,7 +35,7 @@ AI engineer and researcher working across production GenAI, AI safety research a
 
 ## Recognition
 
-[See all 60 certificates →](/certificates/)
+[See all 61 certificates →](/certificates/)
 
 * 2× Google Developer Expert (AI, Google Cloud) · Google Cloud Champion Innovator
 * TensorFlow Contributor Award 2021, Middle East & Africa

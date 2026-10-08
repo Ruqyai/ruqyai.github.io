@@ -111,6 +111,17 @@
   height: 368
   verified: false
   link: ""
+- issuer_en: "Saudi TFUG & Applied ML/AI group · Google ML Olympiad"
+  issuer_ar: "TFUG السعودية ومجموعة Applied ML/AI · ML Olympiad من Google"
+  title_en: "Appreciation for co-hosting the ML Olympiad 2023 Arabic Dialect Recognition competition on Kaggle"
+  title_ar: "شكر وتقدير على استضافة مسابقة تمييز اللهجات العربية في ML Olympiad 2023 على Kaggle"
+  date: 2023-03-09
+  thumb: /images/certificates/ml-olympiad-2023-dialects-thumb.webp
+  full: /images/certificates/ml-olympiad-2023-dialects.webp
+  width: 520
+  height: 325
+  verified: false
+  link: "https://developers.googleblog.com/en/ml-olympiad-2023-globally-distributed-ml-competitions-by-google-ml-community/"
 - issuer_en: "Ministry of Hajj and Umrah"
   issuer_ar: "وزارة الحج والعمرة"
   title_en: "Certificate of Appreciation"
