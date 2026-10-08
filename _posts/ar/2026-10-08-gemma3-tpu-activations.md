@@ -1,6 +1,6 @@
 ---
 title: "افحص ما بداخل Gemma 3 على TPU مجانية"
-date: 2026-10-09
+date: 2026-10-08
 permalink: "/ar/posts/2026/10/gemma3-tpu-activations/"
 excerpt: "استخرج تفعيلات كل طبقات Gemma 3 بـ JAX وKeras على TPU مجانية، وشاهده يجيب بالإنجليزية قبل العربية، ثم وجّهه إلى العربية بمتجه واحد."
 og_image: /images/posts/gemma3-tpu-activations/cover-ar.png

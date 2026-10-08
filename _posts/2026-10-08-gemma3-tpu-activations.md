@@ -1,6 +1,6 @@
 ---
 title: "Look Inside Gemma 3 on a Free TPU"
-date: 2026-10-09
+date: 2026-10-08
 permalink: /posts/2026/10/gemma3-tpu-activations/
 excerpt: "Extract every layer's activations from Gemma 3 with JAX and Keras on a free TPU, then watch it answer in English before Arabic, and steer it into Arabic with one vector."
 og_image: /images/posts/gemma3-tpu-activations/cover.png
