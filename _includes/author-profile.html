@@ -131,7 +131,7 @@
       <li><a href="https://medium.com/@{{ author.medium }}"target="_blank" rel="noopener noreferrer"><i class='fab fa-medium-m'></i> Medium</a></li>
       {% endif %}
       {% if author.Certificates %}
-      <li><a href="{{ author.Certificates }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-certificate" aria-hidden="true"></i> Certificates</a></li>
+      <li><a href="{{ base_path }}{% if page.lang == "ar" %}/ar{% endif %}/certificates/"><i class="fa fa-certificate" aria-hidden="true"></i> {% if page.lang == "ar" %}الشهادات{% else %}Certificates{% endif %}</a></li>
       {% endif %}
     </ul>
   </div>
