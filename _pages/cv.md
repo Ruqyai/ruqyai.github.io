@@ -17,7 +17,7 @@ AI engineer and researcher working across production GenAI, AI safety research a
 
 ## Research
 
-* **EleutherAI · SOAR 2026** (Jul – Aug 2026): AI safety research participant. Hierarchy recovery in sparse autoencoders.
+* **EleutherAI · SOAR 2026** (Jul 2026 – present): AI safety research; the program ran July – August 2026 and the research continues. Hierarchy recovery in sparse autoencoders.
 * **Algoverse** (2026): AI Safety Research Fellow. Circuit tracing of refusal and jailbreak behaviour in Gemma 3.
 * **MMTEB · ICLR 2025**: co-author; contributed Arabic evaluation data.
 

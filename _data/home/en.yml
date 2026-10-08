@@ -45,7 +45,7 @@ hero:
     - [Arabic., 0.97]
   bio: >-
     I built the AI search engine at Fyler from its first architecture to product ownership.
-    Most recently I did AI safety research in mechanistic interpretability with <em>EleutherAI</em>.
+    Now I do AI safety research in mechanistic interpretability with <em>EleutherAI</em>.
     I am a 2× Google Developer Expert and I have spent years teaching AI in Arabic.
   cv_label: CV (PDF)
   cv_url: /files/Ruqiya_Bin_Safi_CV.pdf
@@ -64,11 +64,12 @@ hero:
 
 now:
   eyebrow: "2026"
-  title: Recent
+  title: Now
   items:
-    - when: Jul – Aug 2026
+    - when: Jul 2026 – now
       title: EleutherAI · SOAR 2026
-      text: AI safety research participant, selected from 3,500+ applicants. Working on hierarchy recovery in sparse autoencoders.
+      live: active
+      text: Selected from 3,500+ applicants for the SOAR 2026 research program (July – August 2026), and still working with the team on hierarchy recovery in sparse autoencoders.
     - when: Jan – Jun 2026
       title: Algoverse
       sub: AI Safety Research Fellow
