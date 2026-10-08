@@ -23,6 +23,17 @@
   height: 520
   verified: false
   link: https://www.credential.net/1e544349-7ca1-4326-b580-d93725350875
+- issuer_en: "Fihm AI"
+  issuer_ar: "مجموعة فهم"
+  title_en: "Appreciation for the workshop “Using Generative AI for Data Entry”"
+  title_ar: "شكر وتقدير لتقديم ورشة «توظيف الذكاء الاصطناعي التوليدي لإدخال البيانات»"
+  date: 2024-09-08
+  thumb: /images/certificates/fihm-genai-workshop-2024-thumb.webp
+  full: /images/certificates/fihm-genai-workshop-2024.webp
+  width: 520
+  height: 368
+  verified: false
+  link: ""
 - issuer_en: "King Fahd University of Petroleum and Minerals · WiDS"
   issuer_ar: "جامعة الملك فهد للبترول والمعادن · WiDS"
   title_en: "Certificate of Appreciation"
@@ -89,6 +100,17 @@
   height: 375
   verified: false
   link: https://www.credential.net/556417a3-40ce-4060-806c-adc97c5bb800
+- issuer_en: "Fihm AI"
+  issuer_ar: "مجموعة فهم"
+  title_en: "Appreciation for the Fihm Deep Learning School (3 days)"
+  title_ar: "شكر وتقدير لإنجاح مدرسة فهم للتعلم العميق"
+  date: 2023-09-25
+  thumb: /images/certificates/fihm-dl-school-2023-thumb.webp
+  full: /images/certificates/fihm-dl-school-2023.webp
+  width: 520
+  height: 368
+  verified: false
+  link: ""
 - issuer_en: "Ministry of Hajj and Umrah"
   issuer_ar: "وزارة الحج والعمرة"
   title_en: "Certificate of Appreciation"
@@ -254,6 +276,17 @@
   height: 367
   verified: false
   link: https://www.credential.net/3a0c16b3-b951-4edb-a87e-b093692c98a9
+- issuer_en: "WiDS Saudi Arabia · Bayanyon"
+  issuer_ar: "WiDS السعودية · بيانيون"
+  title_en: "Certificate of Participation: ambassador, WiDS 2022 Datathon"
+  title_ar: "شهادة مشاركة: سفيرة في WiDS Datathon 2022"
+  date: 2022-03-15
+  thumb: /images/certificates/wids-datathon-2022-thumb.webp
+  full: /images/certificates/wids-datathon-2022.webp
+  width: 520
+  height: 368
+  verified: false
+  link: ""
 - issuer_en: "Digital Transformation Conference, Makkah"
   issuer_ar: "مؤتمر التحول التقني"
   title_en: "Certificate of Appreciation"
@@ -265,6 +298,28 @@
   height: 368
   verified: false
   link: https://www.credential.net/e92b2b3a-a467-4038-b491-92d80db28e60
+- issuer_en: "Kidzthon Children's Apps Conference"
+  issuer_ar: "مؤتمر تطبيقات الطفولة «كيدزثون»"
+  title_en: "Appreciation for the lectures and papers at Kidzthon"
+  title_ar: "شكر وتقدير للمشاركة في المحاضرات الإثرائية والأوراق العلمية في كيدزثون"
+  date: 2021-12-28
+  thumb: /images/certificates/kidzthon-lectures-2021-thumb.webp
+  full: /images/certificates/kidzthon-lectures-2021.webp
+  width: 520
+  height: 325
+  verified: false
+  link: ""
+- issuer_en: "Kidzthon Children's Apps Conference"
+  issuer_ar: "مؤتمر تطبيقات الطفولة «كيدزثون»"
+  title_en: "Appreciation for organizing Kidzthon"
+  title_ar: "شكر وتقدير لتنظيم مؤتمر كيدزثون"
+  date: 2021-12-25
+  thumb: /images/certificates/kidzthon-organizing-2021-thumb.webp
+  full: /images/certificates/kidzthon-organizing-2021.webp
+  width: 520
+  height: 325
+  verified: false
+  link: ""
 - issuer_en: "Saudi Data Community"
   issuer_ar: "المجموعة السعودية للبيانات"
   title_en: "Certificate of Appreciation"
