@@ -39,5 +39,5 @@ redirect_from:
 
 * خبيرة مطوري Google في مجالي الذكاء الاصطناعي وGoogle Cloud · Google Cloud Champion Innovator
 * جائزة TensorFlow Contributor لعام 2021، الشرق الأوسط وأفريقيا
-* قائدة Women Techmakers السعودية 2019 – 2024
+* بانية مجتمعات تقنية: أسستُ Women Techmakers جدة وقدتُه (2019 – 2024)، ونظّمتُ ودرّبتُ مع GDG Cloud Saudi وGDG جدة
 * مرشدة في Google for Startups Accelerator MENA
