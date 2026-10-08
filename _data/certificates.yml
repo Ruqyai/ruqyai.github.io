@@ -298,6 +298,18 @@
   height: 368
   verified: false
   link: https://www.credential.net/e92b2b3a-a467-4038-b491-92d80db28e60
+- issuer_en: "Techie Bits"
+  issuer_ar: "مؤسسة الوحدات التقنية Techie Bits"
+  title_en: "Appreciation for work as a technical consultant"
+  title_ar: "شكر وتقدير على العمل مستشارةً تقنية في منصة الاستشارات"
+  date: 2022-01-31
+  period: "2022"
+  thumb: /images/certificates/techie-bits-thumb.webp
+  full: /images/certificates/techie-bits.webp
+  width: 520
+  height: 367
+  verified: false
+  link: ""
 - issuer_en: "Kidzthon Children's Apps Conference"
   issuer_ar: "مؤتمر تطبيقات الطفولة «كيدزثون»"
   title_en: "Appreciation for the lectures and papers at Kidzthon"
@@ -342,6 +354,18 @@
   height: 324
   verified: false
   link: https://www.credential.net/267a0c04-241d-4350-bd87-76dfd640517a
+- issuer_en: "Attaa Digital Initiative"
+  issuer_ar: "مبادرة العطاء الرقمي"
+  title_en: "Appreciation as a contributing member for spreading digital knowledge"
+  title_ar: "شكر وتقدير للعضو المساهم على نشر المعرفة الرقمية وإثراء المحتوى التقني"
+  date: 2021-06-30
+  period: "2021"
+  thumb: /images/certificates/attaa-contributor-thumb.webp
+  full: /images/certificates/attaa-contributor.webp
+  width: 520
+  height: 368
+  verified: false
+  link: ""
 - issuer_en: "University of Jeddah"
   issuer_ar: "جامعة جدة"
   title_en: "Certificate of Thanks"

@@ -35,7 +35,7 @@ redirect_from:
 
 ## التقدير
 
-[عرض كل الشهادات (58) ←](/ar/certificates/)
+[عرض كل الشهادات (60) ←](/ar/certificates/)
 
 * خبيرة مطوري Google في مجالي الذكاء الاصطناعي وGoogle Cloud · Google Cloud Champion Innovator
 * جائزة TensorFlow Contributor لعام 2021، الشرق الأوسط وأفريقيا

@@ -27,7 +27,7 @@
       <figcaption>
         <b>{{ c_issuer }}</b>
         <span>{{ c_title }}</span>
-        <span class="cert-meta">{% include site/date.html date=c.date %}{% if c.verified %} · <span class="cert-badge">{{ L_verified }}</span>{% endif %}</span>
+        <span class="cert-meta">{% if c.period %}{{ c.period }}{% else %}{% include site/date.html date=c.date %}{% endif %}{% if c.verified %} · <span class="cert-badge">{{ L_verified }}</span>{% endif %}</span>
       </figcaption>
     </figure>
     {% if forloop.last %}</div>{% endif %}
