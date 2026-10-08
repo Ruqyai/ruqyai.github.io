@@ -17,7 +17,7 @@ AI engineer and researcher working across production GenAI, AI safety research a
 
 ## Research
 
-* **EleutherAI · SOAR 2026** (2026 – present): AI safety research participant. Hierarchy recovery in sparse autoencoders.
+* **EleutherAI · SOAR 2026** (Jul – Aug 2026): AI safety research participant. Hierarchy recovery in sparse autoencoders.
 * **Algoverse** (2026): AI Safety Research Fellow. Circuit tracing of refusal and jailbreak behaviour in Gemma 3.
 * **MMTEB · ICLR 2025**: co-author; contributed Arabic evaluation data.
 
@@ -35,7 +35,7 @@ AI engineer and researcher working across production GenAI, AI safety research a
 
 ## Recognition
 
-[See all 50 certificates →](/certificates/)
+[See all 51 certificates →](/certificates/)
 
 * 2× Google Developer Expert (AI, Google Cloud) · Google Cloud Champion Innovator
 * TensorFlow Contributor Award 2021, Middle East & Africa

@@ -49,7 +49,9 @@
         img.src = b.getAttribute("data-full");
         img.alt = b.getAttribute("data-caption");
         cap.textContent = b.getAttribute("data-caption");
-        link.href = b.getAttribute("data-link");
+        var l = b.getAttribute("data-link");
+        link.hidden = !l; link.previousSibling && (link.previousSibling.textContent = l ? " · " : "");
+        if (l) link.href = l;
         d.showModal();
       });
     });

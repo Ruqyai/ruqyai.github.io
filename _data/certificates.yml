@@ -1,6 +1,17 @@
 # Certificates from the Accredible wallet (credential.net/profile/1473594), with English and Arabic labels.
 # Generated from private/credentials.json; one certificate that shows a student ID number is left out on purpose.
 
+- issuer_en: "EleutherAI"
+  issuer_ar: "EleutherAI"
+  title_en: "Certificate of Participation · Summer of Open AI Research (SOAR 2026)"
+  title_ar: "شهادة مشاركة · برنامج SOAR 2026 لأبحاث الذكاء الاصطناعي المفتوحة"
+  date: 2026-08-16
+  thumb: /images/certificates/eleutherai-soar-2026-thumb.webp
+  full: /images/certificates/eleutherai-soar-2026.webp
+  width: 368
+  height: 520
+  verified: false
+  link: ""
 - issuer_en: "Imam Abdulrahman Bin Faisal University"
   issuer_ar: "جامعة الإمام عبدالرحمن بن فيصل"
   title_en: "Certificate of Appreciation"
