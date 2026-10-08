@@ -180,8 +180,12 @@ for i, block in enumerate(backbone.transformer_layers):
 
 ## المراجع
 
+<div dir="ltr" style="text-align: left" markdown="1">
+
 - nostalgebraist (2020). [Interpreting GPT: the logit lens](https://www.lesswrong.com/posts/AcKRB8wDpdaN6v6ru/interpreting-gpt-the-logit-lens).
 - Wendler, C., Veselovsky, V., Monea, G., & West, R. (2024). [Do Llamas Work in English? On the Latent Language of Multilingual Transformers](https://arxiv.org/abs/2402.10588).
 - Turner, A. M., et al. (2023). [Steering Language Models With Activation Engineering](https://arxiv.org/abs/2308.10248).
 - Arditi, A., et al. (2024). [Refusal in Language Models Is Mediated by a Single Direction](https://arxiv.org/abs/2406.11717).
+</div>
+
 - [Gemma 3 1B على Hugging Face](https://huggingface.co/google/gemma-3-1b-it) · [KerasHub](https://keras.io/keras_hub/) · [توزيع الحسابات في JAX](https://docs.jax.dev/en/latest/sharded-computation.html)

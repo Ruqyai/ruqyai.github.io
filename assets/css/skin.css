@@ -158,7 +158,7 @@ div.highlighter-rouge .highlight, div.highlighter-rouge { padding: 0; }
 /* Two-column layout on wide screens: flex instead of the theme's floats,
    so the columns swap sides on their own in right-to-left pages. */
 @media (min-width: 1200px) {
-  #main { display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(32px, 4vw, 64px); }
+  #main { --main-gap: clamp(32px, 4vw, 64px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: var(--main-gap); }
   #main > .page__related { flex: 1 0 100%; }
   #main::before, #main::after { content: none; display: none; }
   #main > .sidebar {
@@ -199,6 +199,15 @@ div.highlighter-rouge .highlight, div.highlighter-rouge { padding: 0; }
 
 /* related posts sit under the article at the column width */
 #main > .page__related { width: 100% !important; max-width: 100%; margin: 0 !important; padding: 0; }
+/* on wide screens the profile column stays sticky beside the page, so related posts
+   start after it instead of running underneath it */
+@media (min-width: 1200px) {
+  #main > .sidebar ~ .page__related {
+    flex: 0 0 auto;
+    width: calc(100% - 12rem - var(--main-gap)) !important;
+    margin-inline-start: calc(12rem + var(--main-gap)) !important;
+  }
+}
 /* lists show text only: a post that opens with an animation or image must not drag it into the excerpt */
 .archive__item video, .archive__item iframe, .archive__item p > img, .archive__item > img { display: none; }
 .archive__item-excerpt { overflow-wrap: anywhere; }
