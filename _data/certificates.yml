@@ -353,6 +353,17 @@
   height: 368
   verified: false
   link: https://www.credential.net/8e54338e-a57e-40a6-90b0-bf8d4595c1c3
+- issuer_en: "Attaa Digital Initiative"
+  issuer_ar: "مبادرة العطاء الرقمي"
+  title_en: "Appreciation for the lecture “Using AI for Applications that Build a Smart Makkah”"
+  title_ar: "شكر وتقدير على تقديم محاضرة «استخدام الذكاء الاصطناعي لتطبيقات تعزز بناء مكة الذكية»"
+  date: 2020-10-28
+  thumb: /images/certificates/attaa-smart-makkah-2020-thumb.webp
+  full: /images/certificates/attaa-smart-makkah-2020.webp
+  width: 520
+  height: 368
+  verified: false
+  link: ""
 - issuer_en: "DDD 2020 UK"
   issuer_ar: "DDD 2020 بريطانيا"
   title_en: "DDD 2020"
@@ -364,6 +375,17 @@
   height: 368
   verified: false
   link: https://www.credential.net/16df6119-7ff8-41aa-8d24-372f1f191197
+- issuer_en: "Women in Data Science initiative · Attaa Digital · Bayanyon"
+  issuer_ar: "مبادرة المرأة في علم البيانات · العطاء الرقمي · بيانيون"
+  title_en: "Appreciation for speaking at the Women in Data Science Forum 2020"
+  title_ar: "شكر وتقدير على المشاركة متحدثةً في ملتقى المرأة في علوم البيانات 2020"
+  date: 2020-06-20
+  thumb: /images/certificates/wids-forum-2020-thumb.webp
+  full: /images/certificates/wids-forum-2020.webp
+  width: 520
+  height: 368
+  verified: false
+  link: ""
 - issuer_en: "Saudi Federation for Cybersecurity, Programming and Drones"
   issuer_ar: "الاتحاد السعودي للبرمجة والدرونز"
   title_en: "Certificate of Participation"
