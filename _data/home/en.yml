@@ -56,7 +56,7 @@ hero:
     - { label: Hugging Face, url: "https://huggingface.co/Ruqiya" }
     - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
     - { label: Medium, url: "https://medium.com/@rbinsafi" }
-    - { label: X, url: "https://twitter.com/Ru0Sa" }
+    - { label: X, url: "https://x.com/rbinsafi" }
   facts:
     - { b: "130+", t: "talks, workshops & mentoring sessions · 10 countries" }
     - { b: "2×", t: Google Developer Expert }

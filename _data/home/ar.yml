@@ -51,7 +51,7 @@ hero:
     - { label: Hugging Face, url: "https://huggingface.co/Ruqiya" }
     - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
     - { label: Medium, url: "https://medium.com/@rbinsafi" }
-    - { label: X, url: "https://twitter.com/Ru0Sa" }
+    - { label: X, url: "https://x.com/rbinsafi" }
   facts:
     - { b: "أكثر من 130", t: "محاضرة وورشة وجلسة إرشاد في 10 دول" }
     - { b: خبيرة مطوري Google, t: "· في مجالين" }
