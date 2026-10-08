@@ -1,0 +1,11 @@
+---
+layout: archive
+title: "المحاضرات وورش العمل"
+permalink: "/ar/talks/"
+author_profile: true
+---
+
+{% assign lang_talks = site.talks | where: "lang", page.lang | sort: "date" | reverse %}
+{% for post in lang_talks %}
+  {% include archive-single-talk.html %}
+{% endfor %}

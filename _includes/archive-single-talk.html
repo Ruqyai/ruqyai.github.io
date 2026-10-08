@@ -35,8 +35,9 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
+    {% if post.date %}<p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include site/date.html date=post.date %}</p>{% endif %}
+    {% assign tm_type = post.type | strip %}{% assign tm_venue = post.venue | strip %}{% assign tm_loc = post.location | strip %}{% assign tm = tm_type %}{% if tm_venue != "" and tm_venue != tm_type %}{% assign tm = tm | append: " · " | append: tm_venue %}{% endif %}{% if tm_loc != "" and tm_loc != tm_venue %}{% assign tm = tm | append: " · " | append: tm_loc %}{% endif %}
+    {% if tm != "" %}<p class="archive__item-excerpt talk-meta" itemprop="description">{{ tm }}</p>{% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
   </article>
 </div>

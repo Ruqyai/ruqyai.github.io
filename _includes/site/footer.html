@@ -1,0 +1,9 @@
+{% include base_path %}
+{% include site/alt-url.html %}
+{% assign h = site.data.home[page.lang] %}
+<footer class="foot">
+  <div class="wrap">
+    <span>&copy; {{ site.time | date: "%Y" }} {{ h.site_title }}</span>
+    <span><a href="{{ base_path }}{{ alt_url }}" lang="{{ h.alt_lang }}" hreflang="{{ h.alt_lang }}">{{ h.footer.alt_label }}</a> · {{ h.footer.built }}</span>
+  </div>
+</footer>

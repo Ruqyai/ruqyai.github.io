@@ -1,0 +1,177 @@
+# محتوى الصفحة الرئيسية العربية والشريط العلوي والتذييل.
+# المقالات والمحاضرات والدورات تُسحب تلقائياً من مجلدات "ar"، وكل ما عداها يُعدّل هنا.
+
+lang: ar
+dir: rtl
+alt_lang: en
+alt_dir: ltr
+alt_label: English
+site_title: رقيا بن صافي
+description: مهندسة وباحثة في الذكاء الاصطناعي التوليدي وأمان الذكاء الاصطناعي ومعالجة اللغة العربية، وخبيرة مطوري Google في مجالين.
+months: [يناير, فبراير, مارس, أبريل, مايو, يونيو, يوليو, أغسطس, سبتمبر, أكتوبر, نوفمبر, ديسمبر]
+
+labels:
+  nav: القائمة الرئيسية
+  theme: التبديل بين الوضع الفاتح والداكن
+  online: عن بُعد
+
+hero:
+  mark: رقيا
+  name: رقيا بن صافي
+  eyebrow: مهندسة وباحثة في الذكاء الاصطناعي · السعودية
+  alt_name: Ruqiya Bin Safi
+  logo_alt: شعار رقيا بن صافي
+  acts_caption: تفعيلات الكلمات · ما أعمل عليه
+  acts_hint: مرّر المؤشر على أي كلمة
+  acts_top: أعلى كلمة
+  acts_token: الكلمة
+  # قيم تفعيل توضيحية لكلمات جملة التعريف (من 0 إلى 1)
+  tokens:
+    - [أبني, 0.62]
+    - [أنظمة, 0.35]
+    - [نماذج, 0.5]
+    - [لغوية, 0.81]
+    - [للإنتاج،, 0.45]
+    - [وأدرس, 0.55]
+    - [ما, 0.1]
+    - [يحدث, 0.3]
+    - [بداخلها،, 0.94]
+    - [وأجعلها, 0.25]
+    - [تعمل, 0.38]
+    - [بالعربية., 0.97]
+  bio: >-
+    بنيتُ محرك البحث الذكي في Fyler من أول تصميم لبنيته حتى إدارة المنتج.
+    أعمل الآن في أبحاث أمان الذكاء الاصطناعي وقابلية التفسير الآلي (Mechanistic Interpretability) مع <em>EleutherAI</em>.
+    أنا خبيرة مطوري Google في مجالي الذكاء الاصطناعي والسحابة، وقضيت سنوات في تعليم الذكاء الاصطناعي بالعربية.
+  cv_label: السيرة الذاتية (PDF)
+  cv_url: /files/Ruqiya_Bin_Safi_CV.pdf
+  links:
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/rbinsafi" }
+    - { label: GitHub, url: "https://github.com/Ruqyai" }
+    - { label: Hugging Face, url: "https://huggingface.co/Ruqiya" }
+    - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
+    - { label: Medium, url: "https://medium.com/@rbinsafi" }
+    - { label: X, url: "https://twitter.com/Ru0Sa" }
+  facts:
+    - { b: "أكثر من 130", t: "محاضرة وورشة وجلسة إرشاد في 10 دول" }
+    - { b: خبيرة مطوري Google, t: "· في مجالين" }
+    - { b: ICLR 2025, t: "· مؤلفة مشاركة في MMTEB" }
+
+now:
+  eyebrow: "2026"
+  title: الآن
+  items:
+    - when: يونيو 2026 – الآن
+      title: EleutherAI · SOAR 2026
+      live: نشط
+      text: مشاركة في برنامج أبحاث أمان الذكاء الاصطناعي، اختِرت من بين أكثر من 3,500 متقدم. أعمل على استعادة البنية الهرمية في المُرمِّزات التلقائية المتناثرة (Sparse Autoencoders).
+    - when: يناير – يونيو 2026
+      title: Algoverse
+      sub: زميلة بحثية في أمان الذكاء الاصطناعي
+      text: واحدة من 30 زميلاً اختيروا من حول العالم. تتبّع الدوائر الداخلية المسؤولة عن الرفض وكسر الحماية (Jailbreak) في Gemma 3.
+    - when: 2024 – 2026
+      title: ماجستير إدارة الأعمال في الذكاء الاصطناعي
+      sub: Walbrook Institute London
+
+work:
+  eyebrow: مختارات
+  title: الأعمال
+  intro: أوراق ونماذج ومكتبات، معظمها للغة العربية.
+  items:
+    - kind: ورقة بحثية · ICLR 2025
+      title: MMTEB
+      text: معيار ضخم لتقييم نماذج التضمين في أكثر من 250 لغة. مؤلفة مشاركة، وأسهمتُ ببيانات تقييم عربية.
+      url: https://arxiv.org/abs/2502.13595
+      go: arxiv.org/abs/2502.13595
+    - kind: نموذج · عرض تجريبي
+      title: RuqLM
+      text: عائلة نماذج لغوية عربية صغيرة من 3 إلى 30 مليون معامل، بأوزان منشورة.
+      url: https://ruqlm.web.app
+      go: ruqlm.web.app
+    - kind: مكتبة · PyPI
+      title: ruqia
+      text: تنظيف النصوص العربية وتوحيدها والتعامل مع التشكيل. استخدمتها في مساهمة MMTEB العربية.
+      url: https://github.com/Ruqyai/Ruqia-Library
+      go: pip install ruqia
+    - kind: تطبيق · PaLM 2
+      title: ChatBard
+      text: من أوائل التطبيقات العربية على PaLM 2، وأشاد به حساب Google Cloud Tech، وحصل على 49 نجمة في GitHub.
+      url: https://github.com/Ruqyai/ChatBard
+      go: github.com/Ruqyai/ChatBard
+    - kind: نماذج · ضبط دقيق
+      title: Gemma 2 للعربية
+      text: ضبط دقيق لنموذجي Gemma 2 بحجمي 2B و9B على بيانات عربية بتقنية LoRA، موزعاً على 8 وحدات GPU.
+      url: https://huggingface.co/Ruqiya
+      go: huggingface.co/Ruqiya
+    - kind: وكلاء · Google ADK
+      title: وكلاء التسويق
+      text: وكلاء يكتبون محتوى LinkedIn وينشرونه ويتواصلون فيما بينهم عبر A2A، باستخدام Gemini 3 Pro.
+      url: https://github.com/Ruqyai/Automated-Marketing-Social-Media-System
+      go: github.com/Ruqyai
+
+experience:
+  eyebrow: 2017 – 2026
+  title: الخبرات
+  items:
+    - when: 2023 – 2026
+      title: Fyler
+      org: محرك بحث بالذكاء الاصطناعي التوليدي للشرق الأوسط وشمال أفريقيا
+      text: انضممت مهندسةً في مرحلة مبكرة، وصممت نظام RAG الذي يقوم عليه البحث، ثم قدت المنتج والفريق.
+      ladder:
+        - { role: مهندسة ذكاء اصطناعي, date: سبتمبر 2023 }
+        - { role: مهندسة ذكاء اصطناعي أولى, date: فبراير 2024 }
+        - { role: مديرة السوق السعودي, date: نوفمبر 2024 }
+        - { role: مديرة منتجات ذكاء اصطناعي, date: نوفمبر 2025 }
+    - when: 2021 – 2022
+      title: Success Partners
+      org: المؤسسة والرئيسة التنفيذية
+      text: أسست شركة ناشئة للفعاليات التقنية، وقدت فرقاً تجاوزت 45 شخصاً لتنظيم الهاكاثونات والبرامج التقنية.
+    - when: 2020 – 2022
+      title: بيان
+      org: البحث والتطوير في علم البيانات والذكاء الاصطناعي
+      text: تحليل الشبكات الاجتماعية والمشاعر في المحتوى العربي، ومنها دراسات عن حج 2021 وجائحة كوفيد-19.
+    - when: 2017 – 2022
+      title: استشارات وتدريس وعمل حر
+      text: مستشارة تعلم آلة في Techie Bits، ومدربة ذكاء اصطناعي في Code for Girls، ومهندسة تعلم آلة مستقلة، ومتدربة ثم مرشدة في Classera.
+
+honors:
+  eyebrow: المجتمع
+  title: التقدير
+  items:
+    - { title: خبيرة مطوري Google في مجالين, text: "الذكاء الاصطناعي وGoogle Cloud منذ 2020، وGoogle Cloud Champion Innovator" }
+    - { title: جائزة TensorFlow Contributor لعام 2021, text: 'الشرق الأوسط وأفريقيا · <a href="https://blog.tensorflow.org/2021/11/2021-TF-Contributor-Awardees.html">مدونة TensorFlow</a>' }
+    - { title: متحدثة دولية, text: "محاضرات لمجتمعات المطورين في نيجيريا والجزائر وتركيا والبرازيل والولايات المتحدة وكندا وبولندا والمملكة المتحدة وغينيا" }
+    - { title: مرشدة في Google for Startups Accelerator MENA, text: أرشدت أكثر من 50 شركة ناشئة }
+    - { title: قائدة Women Techmakers السعودية, text: "2019 – 2024 · سفيرة WiDS Stanford" }
+    - { title: متحدثة ومدربة ومحكّمة, text: 'تقدير من 39 جهة، منها أكاديمية STC وأكاديمية طويق وجامعة الملك فهد للبترول والمعادن وجامعة الملك سعود · <a href="/ar/certificates/">50 شهادة</a>' }
+    - { title: هاكاثون الحج 2018, text: ضمن الرقم القياسي في موسوعة غينيس لأكبر هاكاثون }
+    - { title: برمجان العربية الثاني, text: وصل مشروعي إلى مرحلة التحكيم · مجمع الملك سلمان العالمي للغة العربية }
+
+writing:
+  eyebrow: المدونة
+  title: المقالات
+  intro: دروس عن النماذج اللغوية والعربية، وشروحات لأوراق بحثية، وتأملات في منتجات الذكاء الاصطناعي.
+  count: 6
+  more: كل المقالات
+  more_url: /ar/year-archive/
+
+talks:
+  eyebrow: التحدث
+  title: المحاضرات والدورات
+  intro: محاضرات وورش عمل ودورات كاملة، معظمها بالعربية.
+  recent: أحدث المحاضرات
+  count: 4
+  more: كل المحاضرات
+  more_url: /ar/talks/
+  courses: الدورات
+  courses_url: /ar/teaching/
+
+close:
+  title: للتواصل
+  text: للمحاضرات أو الإرشاد أو التعاون البحثي، راسلني على LinkedIn. ويمكنك أيضاً الاشتراك في نشرتي البريدية.
+  primary: { label: راسلني على LinkedIn, url: "https://www.linkedin.com/in/rbinsafi" }
+  secondary: { label: النشرة البريدية, url: "https://svoyr.mjt.lu/wgt/svoyr/xt0l/form?c=9befdd34" }
+
+footer:
+  alt_label: English version
+  built: مبني بـ Jekyll

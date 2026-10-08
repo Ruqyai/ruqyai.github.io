@@ -10,11 +10,11 @@ locale                   : "en-US"
 title                    : "Ruqiya Bin Safi"
 title_separator          : "-"
 name                     : &name "Ruqiya Bin Safi"
-description              : &description "Google Developer Expert in AI / ML and AI Engineer"
+description              : &description "AI engineer and researcher working on generative AI, AI safety and Arabic NLP. 2× Google Developer Expert."
 url                      : https://ruqyai.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Ruqyai/Ruqyai.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+teaser                   :  # filename of teaser fallback teaser image placed in /images/
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : false
@@ -57,23 +57,33 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "Ru0Sa"
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "og-image.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
+  type                   : Person
   name                   : # If the user or organization name differs from the site's name
+  alternate_name         : "رقيا بن صافي"
+  job_title              : "AI Engineer and Researcher"
   links: # An array of links to social media profiles
+    - "https://www.linkedin.com/in/rbinsafi"
+    - "https://github.com/Ruqyai"
+    - "https://huggingface.co/Ruqiya"
+    - "https://www.kaggle.com/ruqiyas"
+    - "https://medium.com/@rbinsafi"
+    - "https://twitter.com/Ru0Sa"
+    - "https://g.dev/rbinsafi"
+    - "https://ruqyai.github.io/ar/"
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -82,7 +92,7 @@ analytics:
 author:
   name             : "Ruqiya Bin Safi"
   avatar           : "profile.png"
-  bio              : "Google Developer Expert in AI / ML and Sr. AI Engineer"
+  bio              : "AI Engineer & Researcher · GenAI · AI Safety · Arabic NLP · 2× Google Developer Expert"
   location         : "Saudi Arabia"
   employer         :
   pubmed           : 
@@ -131,6 +141,10 @@ include:
   - _pages
   - files
 exclude:
+  - private/
+  - Gemfile.lock
+  - README.md
+  - .env
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -199,6 +213,36 @@ collections:
 
 # Defaults
 defaults:
+  # Language: English everywhere unless the file lives in an "ar" folder
+  - scope:
+      path: ""
+    values:
+      lang: en
+      locale: en-US
+  - scope:
+      path: "_pages/ar"
+    values:
+      lang: ar
+      locale: ar
+      author: ar
+  - scope:
+      path: "_posts/ar"
+    values:
+      lang: ar
+      locale: ar
+      author: ar
+  - scope:
+      path: "_talks/ar"
+    values:
+      lang: ar
+      locale: ar
+      author: ar
+  - scope:
+      path: "_teaching/ar"
+    values:
+      lang: ar
+      locale: ar
+      author: ar
   # _posts
   - scope:
       path: ""
@@ -263,7 +307,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Riyadh # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins

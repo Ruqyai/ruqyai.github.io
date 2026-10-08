@@ -1,0 +1,13 @@
+{% comment %} Sets alt_url / alt_exists: the same page in the other language, or that language's home page. {% endcomment %}
+{% if page.lang == "ar" %}
+  {% assign alt_url = page.url | remove_first: "/ar" %}
+  {% if alt_url == "" %}{% assign alt_url = "/" %}{% endif %}
+  {% assign alt_home = "/" %}
+{% else %}
+  {% assign alt_url = page.url | prepend: "/ar" %}
+  {% assign alt_home = "/ar/" %}
+{% endif %}
+{% assign alt_exists = false %}
+{% for d in site.documents %}{% if d.url == alt_url %}{% assign alt_exists = true %}{% break %}{% endif %}{% endfor %}
+{% unless alt_exists %}{% for p in site.pages %}{% if p.url == alt_url %}{% assign alt_exists = true %}{% break %}{% endif %}{% endfor %}{% endunless %}
+{% unless alt_exists %}{% assign alt_url = alt_home %}{% endunless %}

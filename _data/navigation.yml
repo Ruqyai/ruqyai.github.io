@@ -1,22 +1,25 @@
-# main links links
-main:
-
-
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-
-  - title: "Blog Posts"
+# Links in the top bar, per language. Links that start with "/" are on this site;
+# the last link switches language and points at the same page in the other language when it exists.
+en:
+  - title: "Work"
+    url: /#work
+  - title: "Experience"
+    url: /#experience
+  - title: "Writing"
     url: /year-archive/
-
+  - title: "Talks"
+    url: /talks/
   - title: "CV"
     url: /cv/
 
-  - title: "عربي"
-    url: https://ruqyai.github.io/ar/
-
+ar:
+  - title: "الأعمال"
+    url: /ar/#work
+  - title: "الخبرات"
+    url: /ar/#experience
+  - title: "المقالات"
+    url: /ar/year-archive/
+  - title: "المحاضرات"
+    url: /ar/talks/
+  - title: "السيرة الذاتية"
+    url: /ar/cv/

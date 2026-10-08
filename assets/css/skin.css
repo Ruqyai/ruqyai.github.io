@@ -1,0 +1,285 @@
+/* Re-skins the Minimal Mistakes inner pages (posts, talks, CV, archives) with the tokens from site.css.
+   Loaded after main.css, so these rules win without touching the theme's Sass. */
+
+html { font-size: 16px; }
+body {
+  padding-bottom: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-body);
+  line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--f-display);
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--ink); }
+hr { border: 0; border-top: 1px solid var(--line); }
+::selection { background: color-mix(in oklab, var(--heat) 45%, transparent); }
+
+#main {
+  max-width: 68rem;
+  margin-top: clamp(28px, 5vw, 56px);
+  margin-bottom: clamp(40px, 6vw, 72px);
+  padding-inline: var(--gutter);
+  animation: none;
+}
+
+/* sidebar profile */
+.sidebar p, .sidebar li { font-family: var(--f-body); color: var(--muted); }
+.author__avatar img {
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  padding: 0;
+  max-width: 160px;
+}
+.author__name { font-family: var(--f-display); color: var(--ink); font-size: 1.125rem; }
+.author__bio { color: var(--muted); font-size: 0.875rem; line-height: 1.5; }
+.author__urls { border-color: var(--line) !important; background: var(--surface); }
+.author__urls li, .author__urls a { color: var(--muted); font-size: 0.875rem; }
+.author__urls a:hover { color: var(--accent); }
+.author__urls-wrapper .btn,
+.author__urls-wrapper button {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-family: var(--f-body);
+}
+
+/* page */
+.page__title { font-size: clamp(1.9rem, 1.3rem + 2.4vw, 2.75rem); line-height: 1.1; letter-spacing: -0.02em; }
+.page__content { font-size: 1.0625rem; max-width: 46rem; }
+.page__content h2 { border-bottom-color: var(--line); }
+.page__content p, .page__content li, .page__content dl { color: var(--ink); }
+.page__content img { border-radius: 10px; }
+.page__meta, .page__date, .page__taxonomy, .page__date strong { color: var(--muted); font-family: var(--f-body); font-size: 0.875rem; }
+.page__taxonomy-item {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border: 0 !important;
+  border-radius: 999px !important;
+  padding: 2px 10px !important;
+}
+.page__share .btn { border-radius: 999px; }
+.page__related { border-top-color: var(--line); }
+.page__related-title, .archive__subtitle {
+  font-family: var(--f-mono);
+  font-size: 0.8125rem !important;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom-color: var(--line) !important;
+}
+.pagination--pager { border-color: var(--line); color: var(--ink); background: var(--surface); }
+
+/* archives (blog, talks, teaching lists) */
+.archive__item-title { font-family: var(--f-display); font-size: 1.25rem; line-height: 1.3; }
+.archive__item-title a { color: var(--ink); text-decoration: none; }
+.archive__item-title a:hover { color: var(--accent); }
+.archive__item-excerpt, .archive__item p { color: var(--muted); }
+.list__item { border-bottom: 1px solid var(--line); padding-block: 6px 10px; }
+
+/* text elements */
+blockquote { border-inline-start: 3px solid var(--accent); color: var(--muted); font-style: normal; }
+table { color: var(--ink); }
+th, td { border-bottom-color: var(--line) !important; }
+thead { background: var(--surface); }
+tbody tr:nth-child(even) { background: color-mix(in oklab, var(--surface) 60%, transparent); }
+.notice, .notice--info, .notice--warning { background: var(--surface); color: var(--ink); border-radius: 10px; }
+
+/* code keeps a light surface in both themes so the syntax colours stay readable */
+code { font-family: var(--f-mono); }
+:not(pre) > code { background: var(--accent-soft); color: var(--ink); border-radius: 4px; padding: 1px 5px; }
+div.highlighter-rouge, figure.highlight, pre.highlight, .highlight {
+  background: #F6F8F7 !important;
+  color: #1B2622;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+}
+.highlight pre { background: transparent !important; }
+
+/* iframes from slides and videos should never push the page sideways */
+.page__content iframe { max-width: 100%; border-radius: 10px; }
+
+@media (max-width: 1024px) {
+  .page__content { max-width: none; }
+}
+
+/* CV page download button (its own class, so the theme's .btn colours can't reach it) */
+a.cv-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-block: 12px 20px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--f-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+  transition: background-color .15s ease;
+}
+a.cv-download:hover,
+a.cv-download:focus-visible { background: var(--accent); color: var(--paper); text-decoration: none; }
+a.cv-download svg { width: 18px; height: 18px; flex: 0 0 auto; }
+
+/* sidebar icons: the theme gives some brands near-black colours that vanish in dark mode */
+.author__urls i, .author__urls .fab, .author__urls .fas, .author__urls .fa, .author__urls .ai, .author__urls svg {
+  color: var(--muted) !important;
+  fill: currentColor;
+}
+.author__urls a:hover i, .author__urls a:hover .fab, .author__urls a:hover .fas { color: var(--accent) !important; }
+
+/* code blocks: one frame, readable size, scroll inside */
+div.highlighter-rouge pre.highlight,
+figure.highlight pre,
+.highlight pre {
+  margin: 0;
+  padding: 14px 16px;
+  border: 0 !important;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+div.highlighter-rouge .highlight, div.highlighter-rouge { padding: 0; }
+.highlight pre code, pre code { background: transparent !important; padding: 0 !important; font-size: inherit; color: inherit; }
+
+/* animated figures in posts are short muted videos */
+.page__content video { display: block; max-width: 100%; height: auto; border-radius: 10px; margin-block: 8px 16px; }
+
+/* Two-column layout on wide screens: flex instead of the theme's floats,
+   so the columns swap sides on their own in right-to-left pages. */
+@media (min-width: 1200px) {
+  #main { display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(32px, 4vw, 64px); }
+  #main > .page__related { flex: 1 0 100%; }
+  #main::before, #main::after { content: none; display: none; }
+  #main > .sidebar {
+    flex: 0 0 12rem;
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+  #main > .page, #main > .archive {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.page__related { float: none; width: auto; margin-inline: 0; padding-inline: 0; clear: both; }
+
+/* ---------- Arabic (right-to-left) inner pages ---------- */
+[dir="rtl"] body { text-align: right; }
+[dir="rtl"] .author__content { padding-left: 25px; padding-right: 15px; }
+[dir="rtl"] .author__urls { right: auto; left: 0; }
+[dir="rtl"] .author__urls a { padding-right: 0; padding-left: 5px; }
+[dir="rtl"] .page__taxonomy strong { margin-right: 0; margin-left: 10px; }
+[dir="rtl"] .page__taxonomy-item { margin-right: 0; margin-left: 5px; }
+[dir="rtl"] .page__content dd { margin-left: 0; margin-right: 1em; }
+[dir="rtl"] :is(.page__related-title, .archive__subtitle) { font-family: var(--f-body); letter-spacing: 0; text-transform: none; }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3, [dir="rtl"] .page__title { letter-spacing: 0; }
+/* code stays left-to-right inside Arabic text */
+[dir="rtl"] pre, [dir="rtl"] div.highlighter-rouge, [dir="rtl"] figure.highlight { direction: ltr; text-align: left; }
+[dir="rtl"] :not(pre) > code { unicode-bidi: isolate; direction: ltr; }
+
+/* title and its meta line: room for Arabic ascenders and descenders */
+.page__title + .page__meta { margin-top: 0.6em; }
+[dir="rtl"] .page__title { line-height: 1.35; }
+
+/* related posts sit under the article at the column width */
+#main > .page__related { width: 100% !important; max-width: 100%; margin: 0 !important; padding: 0; }
+/* lists show text only: a post that opens with an animation or image must not drag it into the excerpt */
+.archive__item video, .archive__item iframe, .archive__item p > img, .archive__item > img { display: none; }
+.archive__item-excerpt { overflow-wrap: anywhere; }
+
+/* the theme floats these left; without the float they follow the text direction */
+.page .page__inner-wrap .page__content,
+.page .page__inner-wrap .page__meta,
+.page .page__inner-wrap .page__share { float: none; }
+
+/* tables in posts: readable size, and they scroll inside themselves on narrow screens */
+.page__content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+.page__content th, .page__content td { padding: 10px 12px; vertical-align: top; min-width: 9rem; font-size: 0.9375rem; color: var(--ink); }
+.page__content th { font-family: var(--f-body); font-weight: 600; text-align: start; }
+
+/* quotes: one bar on the side the text starts from */
+blockquote { border-left: 0; border-right: 0; border-inline-start: 3px solid var(--accent); padding-inline: 1em 0; margin-inline: 0; }
+
+/* ---------- certificate gallery ---------- */
+.certs-intro { color: var(--muted); max-width: 46rem; }
+.certs-year {
+  font-family: var(--f-mono);
+  font-size: 0.875rem !important;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 6px;
+  margin: 2rem 0 1rem;
+}
+[dir="rtl"] .certs-year { font-family: var(--f-body); letter-spacing: 0; }
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 210px), 1fr));
+  gap: 18px;
+}
+.cert { margin: 0; display: grid; gap: 8px; align-content: start; }
+.cert-open {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  cursor: zoom-in;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.cert-open:hover { border-color: var(--accent); transform: translateY(-2px); }
+.cert-open:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.cert-open img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; border-radius: 4px; }
+.cert figcaption { display: grid; gap: 2px; font-size: 0.875rem; line-height: 1.45; }
+.cert figcaption b { color: var(--ink); font-weight: 600; }
+.cert figcaption span { color: var(--muted); }
+.cert-meta { font-size: 0.8125rem; }
+.cert-badge { color: var(--accent) !important; font-weight: 600; }
+.cert-dialog {
+  max-width: min(1100px, 94vw);
+  max-height: 92vh;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink);
+}
+.cert-dialog::backdrop { background: rgba(0, 0, 0, 0.72); }
+.cert-dialog img { display: block; max-width: 100%; max-height: 78vh; margin-inline: auto; border-radius: 6px; }
+.cert-dialog-cap { margin: 10px 4px 2px; font-size: 0.875rem; color: var(--muted); }
+.cert-close {
+  float: inline-end;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}

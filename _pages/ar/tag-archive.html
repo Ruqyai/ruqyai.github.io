@@ -1,0 +1,18 @@
+---
+layout: archive
+permalink: "/ar/tags/"
+title: "المقالات حسب الوسوم"
+author_profile: true
+---
+
+{% include base_path %}
+{% assign lang_posts = site.posts | where: "lang", page.lang %}
+{% include group-by-array collection=lang_posts field="tags" %}
+
+{% for tag in group_names %}
+  {% assign posts = group_items[forloop.index0] %}
+  <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
+  {% for post in posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endfor %}

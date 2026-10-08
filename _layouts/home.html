@@ -1,0 +1,249 @@
+---
+---
+{% include base_path %}
+{% assign h = site.data.home[page.lang] %}
+<!doctype html>
+<html lang="{{ h.lang }}" dir="{{ h.dir }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  {% include seo.html %}
+  <link href="{{ base_path }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  {% include site/head.html %}
+</head>
+<body class="home">
+{% include site/bar.html %}
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">{{ h.hero.eyebrow }}</p>
+        <h1>{{ h.hero.name }}</h1>
+        <p class="alt-name" lang="{{ h.alt_lang }}" dir="{{ h.alt_dir }}">{{ h.hero.alt_name }}</p>
+
+        <figure class="acts" aria-label="{{ h.hero.acts_caption }}">
+          <figcaption class="acts-head">
+            <span>{{ h.hero.acts_caption }}</span>
+            <span>{{ h.hero.acts_hint }}</span>
+          </figcaption>
+          <p class="acts-line" id="acts-line">{% for t in h.hero.tokens %}<span class="tok" tabindex="0" style="--a: {{ t[1] }}" data-a="{{ t[1] }}">{{ t[0] }}</span>{% unless forloop.last %}&#32;{% endunless %}{% endfor %}</p>
+          <div class="acts-read" aria-live="polite">
+            <span class="scale" aria-hidden="true"></span>
+            <span id="acts-read"></span>
+          </div>
+        </figure>
+
+        <p class="bio">{{ h.hero.bio }}</p>
+
+        <div class="actions">
+          {% assign cv_file = site.static_files | where: "path", h.hero.cv_url | first %}
+          {% if cv_file %}
+          <a class="btn primary" href="{{ base_path }}{{ h.hero.cv_url }}">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10"/></svg>
+            {{ h.hero.cv_label }}
+          </a>
+          {% endif %}
+          {% for l in h.hero.links %}<a class="btn" href="{{ l.url }}">{{ l.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+
+      <aside class="portrait">
+        <img src="{{ base_path }}/images/{{ site.author.avatar }}" alt="{{ h.hero.logo_alt }}" width="400" height="400">
+        <div class="facts">
+          {% for f in h.hero.facts %}<span><b>{{ f.b }}</b> {{ f.t }}</span>
+          {% endfor %}
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec" id="now">
+    <div class="wrap">
+      <div class="sec-label">
+        <p class="eyebrow">{{ h.now.eyebrow }}</p>
+        <h2>{{ h.now.title }}</h2>
+      </div>
+      <div class="now">
+        {% for n in h.now.items %}
+        <div class="now-row">
+          <span class="when">{{ n.when }}</span>
+          <div>
+            <h3>{{ n.title }}{% if n.sub %} <small>· {{ n.sub }}</small>{% endif %}{% if n.live %} <span class="live">{{ n.live }}</span>{% endif %}</h3>
+            {% if n.text %}<p>{{ n.text }}</p>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="wrap">
+      <div class="sec-label">
+        <p class="eyebrow">{{ h.work.eyebrow }}</p>
+        <h2>{{ h.work.title }}</h2>
+        <p>{{ h.work.intro }}</p>
+      </div>
+      <div class="cards">
+        {% for c in h.work.items %}
+        <a class="card" href="{{ c.url }}">
+          <span class="kind">{{ c.kind }}</span>
+          <h3>{{ c.title }}</h3>
+          <p>{{ c.text }}</p>
+          <span class="go">{{ c.go }}</span>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="sec-label">
+        <p class="eyebrow">{{ h.experience.eyebrow }}</p>
+        <h2>{{ h.experience.title }}</h2>
+      </div>
+      <div class="xp">
+        {% for x in h.experience.items %}
+        <div class="xp-item">
+          <span class="when">{{ x.when }}</span>
+          <div>
+            <h3>{{ x.title }}{% if x.org %} <span class="org">· {{ x.org }}</span>{% endif %}</h3>
+            {% if x.text %}<p>{{ x.text }}</p>{% endif %}
+            {% if x.ladder %}
+            <ol class="ladder">
+              {% for r in x.ladder %}<li><span class="role">{{ r.role }}</span><span class="dates">{{ r.date }}</span></li>
+              {% endfor %}
+            </ol>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="recognition">
+    <div class="wrap">
+      <div class="sec-label">
+        <p class="eyebrow">{{ h.honors.eyebrow }}</p>
+        <h2>{{ h.honors.title }}</h2>
+      </div>
+      <div class="honors">
+        {% for o in h.honors.items %}<div class="honor"><b>{{ o.title }}</b><span>{{ o.text }}</span></div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="writing">
+    <div class="wrap">
+      <div class="sec-label">
+        <p class="eyebrow">{{ h.writing.eyebrow }}</p>
+        <h2>{{ h.writing.title }}</h2>
+        <p>{{ h.writing.intro }}</p>
+      </div>
+      <div>
+        <div class="list">
+          {% assign lang_posts = site.posts | where: "lang", page.lang %}
+          {% for post in lang_posts limit: h.writing.count %}
+          {% assign m = post.date | date: "%-m" | minus: 1 %}
+          <a class="li" href="{{ base_path }}{{ post.url }}"><span class="when">{{ h.months[m] }} {{ post.date | date: "%Y" }}</span><span><span class="t">{{ post.title }}</span>{% if post.tags.size > 0 %}<div class="m">{{ post.tags | slice: 0, 3 | join: " · " }}</div>{% endif %}</span></a>
+          {% endfor %}
+        </div>
+        <a class="more" href="{{ base_path }}{{ h.writing.more_url }}">{{ h.writing.more }} ({{ lang_posts.size }}) {% if h.dir == "rtl" %}←{% else %}→{% endif %}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="talks">
+    <div class="wrap">
+      <div class="sec-label">
+        <p class="eyebrow">{{ h.talks.eyebrow }}</p>
+        <h2>{{ h.talks.title }}</h2>
+        <p>{{ h.talks.intro }}</p>
+      </div>
+      <div class="split">
+        <div>
+          <h3>{{ h.talks.recent }}</h3>
+          <div class="list">
+            {% assign talks = site.talks | where: "lang", page.lang | sort: "date" | reverse %}
+            {% for talk in talks limit: h.talks.count %}
+            {% assign m = talk.date | date: "%-m" | minus: 1 %}
+            {% assign venue = talk.venue | strip %}
+            <a class="li" href="{{ base_path }}{{ talk.url }}"><span class="when">{{ h.months[m] }} {{ talk.date | date: "%Y" }}</span><span><span class="t">{{ talk.title }}</span><div class="m">{% if venue == "Online" %}{{ h.labels.online }}{% else %}{{ venue }}{% endif %}</div></span></a>
+            {% endfor %}
+          </div>
+          <a class="more" href="{{ base_path }}{{ h.talks.more_url }}">{{ h.talks.more }} ({{ talks.size }}) {% if h.dir == "rtl" %}←{% else %}→{% endif %}</a>
+        </div>
+        <div class="courses">
+          <h3>{{ h.talks.courses }}</h3>
+          <div class="list">
+            {% assign courses = site.teaching | where: "lang", page.lang | sort: "date" | reverse %}
+            {% for c in courses %}
+            <a class="li" href="{{ base_path }}{{ c.url }}"><span class="when">{{ c.date | date: "%Y" }}</span><span><span class="t">{{ c.title }}</span></span></a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap one">
+      <div class="close">
+        <div>
+          <h2>{{ h.close.title }}</h2>
+          <p>{{ h.close.text }}</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="{{ h.close.primary.url }}">{{ h.close.primary.label }}</a>
+          <a class="btn" href="{{ h.close.secondary.url }}">{{ h.close.secondary.label }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include site/footer.html %}
+
+<script>
+  (function () {
+    var line = document.getElementById("acts-line");
+    var read = document.getElementById("acts-read");
+    if (!line || !read) return;
+    var toks = Array.prototype.slice.call(line.querySelectorAll(".tok"));
+    var labelTop = {{ h.hero.acts_top | jsonify }};
+    var labelTok = {{ h.hero.acts_token | jsonify }};
+    function word(el) { return el.textContent.replace(/[.,،]$/, ""); }
+    function val(el) { return parseFloat(el.getAttribute("data-a")); }
+    function render(label, el) {
+      read.innerHTML = "";
+      read.appendChild(document.createTextNode(label + " "));
+      var b = document.createElement("b"); b.textContent = word(el); read.appendChild(b);
+      read.appendChild(document.createTextNode(" · "));
+      var n = document.createElement("span"); n.dir = "ltr"; n.textContent = val(el).toFixed(2); read.appendChild(n);
+    }
+    var top = toks.reduce(function (m, t) { return val(t) > val(m) ? t : m; }, toks[0]);
+    function reset() {
+      toks.forEach(function (t) { t.classList.remove("is-on"); });
+      render(labelTop, top);
+    }
+    toks.forEach(function (t) {
+      t.addEventListener("mouseenter", function () { render(labelTok, t); });
+      t.addEventListener("focus", function () { render(labelTok, t); });
+      t.addEventListener("click", function () {
+        toks.forEach(function (o) { o.classList.remove("is-on"); });
+        t.classList.add("is-on");
+        render(labelTok, t);
+      });
+    });
+    line.addEventListener("mouseleave", function () { if (!line.querySelector(".tok.is-on")) reset(); });
+    reset();
+  })();
+</script>
+{% include analytics.html %}
+</body>
+</html>

@@ -9,121 +9,35 @@ redirect_from:
 
 {% include base_path %}
 
-**Summary**
+AI engineer and researcher working across production GenAI, AI safety research and Arabic NLP. 2× Google Developer Expert.
 
-A Senior AI Engineer and Google Developer Expert in the fields of Artificial Intelligence and Machine Learning. Driven by a love for adventure and exploration, she is committed to self-learning in the areas of deep learning, generative AI, and Arabic Natural Language Processing (NLP). She has a proven track record in leading teams and contributing to the community. In her current role, she is focused on developing innovative AI-powered products by leveraging the latest technologies such as Large Language Models (LLMs), LangChain, and Retrieval-Augmented Generation (RAG). She demonstrates a passion for advancing Arabic NLP applications and generative AI, and actively participates in the AI community through mentorship and knowledge-sharing initiatives.
+{% assign cv_file = site.static_files | where: "path", "/files/Ruqiya_Bin_Safi_CV.pdf" | first %}{% if cv_file %}
+<p><a class="cv-download" href="{{ base_path }}/files/Ruqiya_Bin_Safi_CV.pdf"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 2v8m0 0 3-3m-3 3L5 7M3 13h10"/></svg><span>Download the full CV (PDF)</span></a></p>
+{% endif %}
 
-**Experience**
+## Research
 
-**Fyler** (Sep 2023 - Present) 
+* **EleutherAI · SOAR 2026** (2026 – present): AI safety research participant. Hierarchy recovery in sparse autoencoders.
+* **Algoverse** (2026): AI Safety Research Fellow. Circuit tracing of refusal and jailbreak behaviour in Gemma 3.
+* **MMTEB · ICLR 2025**: co-author; contributed Arabic evaluation data.
 
-* **Senior AI Engineer (Feb 2024 - Present):** Developing an AI-based search engine for the MENA region.
-* **AI Engineer (Sep 2023 - Feb 2024):** Developed innovative products using LLMs, NLP, and LangChain. 
+## Experience
 
-**Success Partners** (Apr 2021 - Jan 2022)
+* **Fyler** (2023 – 2026): AI Engineer → Senior AI Engineer → Head of Saudi Arabia → AI Product Manager. Built the RAG pipeline behind a GenAI search engine for MENA, then led the product and the team.
+* **Success Partners** (2021 – 2022): Founder & CEO of a technical-events startup.
+* **Bayan** (2020 – 2022): R&D in Arabic social network and sentiment analysis.
+* **Earlier** (2017 – 2022): ML consultant, AI instructor, freelance ML engineer.
 
-* **Chief Executive Officer:** Led teams of 45 people to implement technical hackathons and provide other services, gaining diverse skills in a startup environment.
+## Education
 
-**Bayan (Data science & Artificial intelligence)** (Jul 2020 - Jan 2022)
+* **MBA in Artificial Intelligence**, Walbrook Institute London
+* **BSc in Information Technology**, Saudi Electronic University, First Class Honors
 
-* **Research And Development Member:** Participated in projects including Twitter social network analysis during the pandemic, Hajj 2021 tweets analysis, and Twitter sentiment analysis about school reopening.
+## Recognition
 
-**Techie bits** (Jul 2020 - Jan 2022)
+[See all 50 certificates →](/certificates/)
 
-* **Data Science and AI/ML Consultant** 
-
-**CODE FOR GIRLS** (May 2020 - Jan 2022) 
-
-* **AI and Data Science Instructor**
-
-**Self Employed** (Mar 2018 - Jan 2022)
-
-* **Freelance:** Worked on Data Science, Artificial Intelligence, and Machine Learning projects, including object detection, face recognition, time series, text classification, and Twitter NLP. Additionally, I have experience in website and mobile development.
-
-**Classera**  (Jul 2017 - Aug 2017; Jul 2019 - Aug 2019)
-
-* **Summer Internship Program (2017):**
-    * Migrated Classera functions into API.
-    * Prepared presentations and conducted research on e-learning solutions.
-    * Developed a webpage of Classera Exams using HTML, CSS, and JavaScript.
-
-* **Summer Internship Program Mentor (2019):**
-    * Provided support and guidance to trainees in the Summer Internship Program.
-
-**Community Experiences**  
-
-* **Google Developer Expert in AI/ML:** Google developer expert in Artificial Intelligence/Machine Learning (Oct 2020 - Present)
-* **Google Cloud Champion Innovator:**  (Dec 2022 - Present)
-* **Google for Startups Accelerator MENA:** Mentor (Jan 2021 - Dec 2023) 
-* **Omdena UAE Chapter:** MLOps [Co-Lead Task] (Sep 2023 - Oct 2023)
-* **Fihm.ai:** Member (Feb 2020 - Present)
-* **TFUG-Saudi:** Co-Founder (Jan 2021 - Present) 
-* **Women in Data Science (WiDS) at Stanford University:** Ambassador (Dec 2020 - Dec 2023)
-* **Women Techmakers:** Ambassador (Jan 2020 - Present) 
-* **GDG Cloud Saudi:** Co-Organizer (Mar 2019 - Sep 2023)
-* **WTM Saudi Arabia:** Leader (Oct 2019 - Jan 2024) 
-* **Fintech Accelerator Program & Hackathon:** Mentor (Aug 2019 - Nov 2019) 
-
-**Education**
-
-* **LIBF:** Master of Science - MS, Artificial Intelligence (Dec 2023 - May 2025) (Expected) 
-* **Saudi Electronic University:** Bachelor's degree, Information Technology (2013 - 2018) 
-
-**Core Skills**
-
-* **Generative AI & LLMs:** Expertise in leveraging Large Language Models (LLMs) for applications like text generation, translation, and chatbot development. Proficient in LangChain and Retrieval Augmented Generation (RAG) for advanced LLM implementations.
-* **Arabic NLP:** Deep understanding and experience in developing NLP solutions for the Arabic language, including text classification, sentiment analysis, and named entity recognition.
-* **Machine Learning & Deep Learning:** Solid foundation in machine learning and deep learning algorithms, with experience in building and deploying models for various tasks.
-* **Data Science & Analysis:** Proficient in data collection, processing, and analysis techniques, with the ability to extract meaningful insights from complex datasets.
-* **Project Management & Leadership:** Successfully led teams, demonstrating strong organizational and communication skills.
-
-
-
-<!-- Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
-<!-- Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
-  
-<!-- Service and leadership
-======
-* Currently signed in to 43 different slack teams -->
+* 2× Google Developer Expert (AI, Google Cloud) · Google Cloud Champion Innovator
+* TensorFlow Contributor Award 2021, Middle East & Africa
+* Women Techmakers Saudi lead, 2019 – 2024
+* Mentor, Google for Startups Accelerator MENA

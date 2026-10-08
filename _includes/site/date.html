@@ -1,0 +1,1 @@
+{% comment %} Prints include.date in the page's language: "July 21, 2025" or "21 يوليو 2025". {% endcomment %}{% if page.lang == "ar" %}{% assign _m = include.date | date: "%-m" | minus: 1 %}{{ include.date | date: "%-d" }} {{ site.data.home.ar.months[_m] }} {{ include.date | date: "%Y" }}{% else %}{{ include.date | date: "%B %-d, %Y" }}{% endif %}

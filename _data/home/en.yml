@@ -1,0 +1,182 @@
+# Content for the home page (layout: home) and the shared top bar and footer.
+# Posts, talks and courses are pulled from their collections automatically;
+# everything else on the home page is edited here.
+
+lang: en
+dir: ltr
+alt_lang: ar
+alt_dir: rtl
+alt_label: عربي
+site_title: Ruqiya Bin Safi
+description: AI engineer and researcher working on generative AI, AI safety and Arabic NLP. 2× Google Developer Expert.
+months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+
+labels:
+  nav: Main
+  theme: Switch light or dark mode
+  online: Online
+
+hero:
+  mark: Ruqiya
+  eyebrow: AI Engineer & Researcher · Saudi Arabia
+  alt_name: رقيا بن صافي
+  logo_alt: Ruqiya Bin Safi logo
+  acts_caption: token activations · what I work on
+  acts_hint: hover a word
+  acts_top: top token
+  acts_token: token
+  # Illustrative activation values for the intro sentence (0 to 1).
+  tokens:
+    - [I, 0.05]
+    - [build, 0.62]
+    - [production, 0.48]
+    - [LLM, 0.81]
+    - ["systems,", 0.34]
+    - [study, 0.55]
+    - [what, 0.12]
+    - [happens, 0.3]
+    - [inside, 0.94]
+    - ["them,", 0.4]
+    - [and, 0.04]
+    - [make, 0.22]
+    - [them, 0.1]
+    - [work, 0.38]
+    - [in, 0.08]
+    - [Arabic., 0.97]
+  bio: >-
+    I built the AI search engine at Fyler from its first architecture to product ownership.
+    Now I do AI safety research in mechanistic interpretability with <em>EleutherAI</em>.
+    I am a 2× Google Developer Expert and I have spent years teaching AI in Arabic.
+  cv_label: CV (PDF)
+  cv_url: /files/Ruqiya_Bin_Safi_CV.pdf
+  name: Ruqiya Bin Safi
+  links:
+    - { label: LinkedIn, url: "https://www.linkedin.com/in/rbinsafi" }
+    - { label: GitHub, url: "https://github.com/Ruqyai" }
+    - { label: Hugging Face, url: "https://huggingface.co/Ruqiya" }
+    - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
+    - { label: Medium, url: "https://medium.com/@rbinsafi" }
+    - { label: X, url: "https://twitter.com/Ru0Sa" }
+  facts:
+    - { b: "130+", t: "talks, workshops & mentoring sessions · 10 countries" }
+    - { b: "2×", t: Google Developer Expert }
+    - { b: ICLR 2025, t: "· MMTEB co-author" }
+
+now:
+  eyebrow: "2026"
+  title: Now
+  items:
+    - when: Jun 2026 – now
+      title: EleutherAI · SOAR 2026
+      live: active
+      text: AI safety research participant, selected from 3,500+ applicants. Working on hierarchy recovery in sparse autoencoders.
+    - when: Jan – Jun 2026
+      title: Algoverse
+      sub: AI Safety Research Fellow
+      text: One of 30 fellows selected worldwide. Circuit tracing of refusal and jailbreak behaviour in Gemma 3.
+    - when: 2024 – 2026
+      title: MBA in Artificial Intelligence
+      sub: Walbrook Institute London
+
+work:
+  eyebrow: Selected
+  title: Work
+  intro: Papers, models and libraries, most of them for Arabic.
+  items:
+    - kind: Paper · ICLR 2025
+      title: MMTEB
+      text: Massive Multilingual Text Embedding Benchmark. I am a co-author and contributed Arabic evaluation data.
+      url: https://arxiv.org/abs/2502.13595
+      go: arxiv.org/abs/2502.13595
+    - kind: Model · Demo
+      title: RuqLM
+      text: A family of small Arabic language models, from 3M to 30M parameters, with public weights.
+      url: https://ruqlm.web.app
+      go: ruqlm.web.app
+    - kind: Library · PyPI
+      title: ruqia
+      text: Arabic text cleaning, normalization and diacritics. Used for the MMTEB Arabic work.
+      url: https://github.com/Ruqyai/Ruqia-Library
+      go: pip install ruqia
+    - kind: App · PaLM 2
+      title: ChatBard
+      text: One of the first Arabic apps on PaLM 2. Featured by Google Cloud Tech, with 49 stars on GitHub.
+      url: https://github.com/Ruqyai/ChatBard
+      go: github.com/Ruqyai/ChatBard
+    - kind: Models · Fine-tuning
+      title: Gemma 2 for Arabic
+      text: Gemma 2 2B and 9B fine-tuned on Arabic data with LoRA, trained across 8 GPUs.
+      url: https://huggingface.co/Ruqiya
+      go: huggingface.co/Ruqiya
+    - kind: Agents · Google ADK
+      title: Marketing agents
+      text: Agents that write and post LinkedIn content and talk to each other over A2A, running on Gemini 3 Pro.
+      url: https://github.com/Ruqyai/Automated-Marketing-Social-Media-System
+      go: github.com/Ruqyai
+
+experience:
+  eyebrow: 2017 – 2026
+  title: Experience
+  items:
+    - when: 2023 – 2026
+      title: Fyler
+      org: GenAI search engine for MENA
+      text: Joined as an early engineer. Designed the RAG pipeline behind the core search product, then led the product and the team.
+      ladder:
+        - { role: AI Engineer, date: Sep 2023 }
+        - { role: Senior AI Engineer, date: Feb 2024 }
+        - { role: Head of Saudi Arabia, date: Nov 2024 }
+        - { role: AI Product Manager, date: Nov 2025 }
+    - when: 2021 – 2022
+      title: Success Partners
+      org: Founder & CEO
+      text: Founded a technical-events startup and ran teams of 45+ people delivering hackathons and developer programs.
+    - when: 2020 – 2022
+      title: Bayan
+      org: R&D, Data Science & AI
+      text: Arabic social network and sentiment analysis, including Hajj 2021 and COVID-19 studies.
+    - when: 2017 – 2022
+      title: Consulting, teaching & freelance
+      text: ML consultant at Techie Bits, AI instructor at Code for Girls, freelance ML engineer, and intern then mentor at Classera.
+
+honors:
+  eyebrow: Community
+  title: Recognition
+  items:
+    - { title: 2× Google Developer Expert, text: "AI and Google Cloud, since 2020" }
+    - { title: Google Cloud Champion Innovator, text: Also a member of the Google GenAI Circle }
+    - { title: TensorFlow Contributor Award 2021, text: 'Middle East & Africa · <a href="https://blog.tensorflow.org/2021/11/2021-TF-Contributor-Awardees.html">TensorFlow blog</a>' }
+    - { title: International speaker, text: "Talks for developer communities in Nigeria, Algeria, Türkiye, Brazil, the USA, Canada, Poland, the UK and Guinea" }
+    - { title: "Mentor, Google for Startups Accelerator MENA", text: 50+ startups mentored }
+    - { title: Women Techmakers Saudi lead, text: "2019 – 2024 · WiDS Stanford ambassador" }
+    - { title: "Speaker, trainer and judge", text: 'Recognized by 39 organizations, including STC Academy, Tuwaiq Academy, KFUPM and King Saud University · <a href="/certificates/">50 certificates</a>' }
+    - { title: Hajj Hackathon 2018, text: Part of the Guinness World Record for the largest hackathon }
+
+writing:
+  eyebrow: Blog
+  title: Writing
+  intro: Tutorials on LLMs and Arabic, paper explainers, and notes on AI products.
+  count: 6
+  more: All posts
+  more_url: /year-archive/
+
+talks:
+  eyebrow: Speaking
+  title: Talks & teaching
+  intro: Talks, workshops and full courses, most of them in Arabic.
+  recent: Recent talks
+  count: 4
+  more: All talks
+  more_url: /talks/
+  courses: Courses
+  courses_url: /teaching/
+
+close:
+  title: Get in touch
+  text: For talks, mentoring or research collaboration, message me on LinkedIn. You can also subscribe to my newsletter.
+  primary: { label: Message on LinkedIn, url: "https://www.linkedin.com/in/rbinsafi" }
+  secondary: { label: Newsletter, url: "https://svoyr.mjt.lu/wgt/svoyr/xtxy/form?c=9f678f6a" }
+
+footer:
+  alt_label: النسخة العربية
+  built: Built with Jekyll

@@ -1,18 +1,17 @@
-# Authors
+# Sidebar profile for Arabic pages (English pages use `author` in _config.yml).
+# Keep the links in step with _config.yml.
 
-Name Name:
-  name        : "Name Name"
-  uri         : "http://name.com"
-  email       : "name@name.com"
-  bio         : "This is the first name."
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
-
-Name2 Name2:
-  name        : "Name2 Name2"
-  email       : "name2@name2.com"
-  bio         : "I ordered what?"
-  avatar      : "bio-photo.jpg"
-  twitter     : "name2"
-  google_plus : "Name"
+ar:
+  name             : "رقيا بن صافي"
+  avatar           : "profile.png"
+  bio              : "مهندسة وباحثة في الذكاء الاصطناعي · الذكاء الاصطناعي التوليدي · أمان الذكاء الاصطناعي · معالجة اللغة العربية · خبيرة مطوري Google"
+  location         : "السعودية"
+  github           : "ruqyai"
+  google_plus      : "https://g.dev/rbinsafi"
+  linkedin         : "rbinsafi"
+  twitter          : "Ru0Sa"
+  huggingface      : "ruqiya"
+  kaggle           : "ruqiyas"
+  medium           : "rbinsafi"
+  cloud            : "https://www.cloudskillsboost.google/public_profiles/fc7fde95-7fe0-4736-a793-b3f716e8694b"
+  Certificates     : "https://www.credential.net/profile/1473594/wallet"

@@ -1,0 +1,58 @@
+{% comment %}
+  Certificate gallery, grouped by year. Data: _data/certificates.yml.
+  Labels follow the page language; clicking a certificate opens it full size in a dialog.
+{% endcomment %}
+{% include base_path %}
+{% if page.lang == "ar" %}
+  {% assign L_verified = "موثّقة" %}{% assign L_verify = "التحقق في Accredible" %}{% assign L_close = "إغلاق" %}{% assign L_open = "عرض الشهادة" %}
+{% else %}
+  {% assign L_verified = "Verified" %}{% assign L_verify = "Verify on Accredible" %}{% assign L_close = "Close" %}{% assign L_open = "View certificate" %}
+{% endif %}
+{% assign certs = site.data.certificates %}
+<div class="certs">
+  {% assign current_year = "" %}
+  {% for c in certs %}
+    {% if page.lang == "ar" %}{% assign c_issuer = c.issuer_ar %}{% assign c_title = c.title_ar %}{% else %}{% assign c_issuer = c.issuer_en %}{% assign c_title = c.title_en %}{% endif %}
+    {% assign yr = c.date | date: "%Y" %}
+    {% if yr != current_year %}
+      {% unless forloop.first %}</div>{% endunless %}
+      <h2 class="certs-year">{{ yr }}</h2>
+      <div class="certs-grid">
+      {% assign current_year = yr %}
+    {% endif %}
+    <figure class="cert">
+      <button type="button" class="cert-open" data-full="{{ base_path }}{{ c.full }}" data-link="{{ c.link }}" data-caption="{{ c_issuer | escape }} · {{ c_title | escape }}" aria-label="{{ L_open }}: {{ c_issuer | escape }}">
+        <img src="{{ base_path }}{{ c.thumb }}" width="{{ c.width }}" height="{{ c.height }}" loading="lazy" alt="{{ c_title | escape }}, {{ c_issuer | escape }}">
+      </button>
+      <figcaption>
+        <b>{{ c_issuer }}</b>
+        <span>{{ c_title }}</span>
+        <span class="cert-meta">{% include site/date.html date=c.date %}{% if c.verified %} · <span class="cert-badge">{{ L_verified }}</span>{% endif %}</span>
+      </figcaption>
+    </figure>
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %}
+</div>
+
+<dialog class="cert-dialog" id="cert-dialog">
+  <form method="dialog"><button class="cert-close" aria-label="{{ L_close }}">×</button></form>
+  <img id="cert-dialog-img" src="" alt="">
+  <p class="cert-dialog-cap"><span id="cert-dialog-cap"></span> · <a id="cert-dialog-link" href="#" target="_blank" rel="noopener">{{ L_verify }}</a></p>
+</dialog>
+<script>
+  (function () {
+    var d = document.getElementById("cert-dialog");
+    if (!d || !d.showModal) return;
+    var img = document.getElementById("cert-dialog-img"), cap = document.getElementById("cert-dialog-cap"), link = document.getElementById("cert-dialog-link");
+    document.querySelectorAll(".cert-open").forEach(function (b) {
+      b.addEventListener("click", function () {
+        img.src = b.getAttribute("data-full");
+        img.alt = b.getAttribute("data-caption");
+        cap.textContent = b.getAttribute("data-caption");
+        link.href = b.getAttribute("data-link");
+        d.showModal();
+      });
+    });
+    d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+  })();
+</script>

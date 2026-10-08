@@ -1,0 +1,36 @@
+{% include base_path %}
+{% include site/alt-url.html %}
+{% assign h = site.data.home[page.lang] %}
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="{{ base_path }}/">{{ h.hero.mark }}<span>.</span></a>
+    <div class="bar-end">
+      <nav class="nav" aria-label="{{ h.labels.nav }}">
+        {% for link in site.data.navigation[page.lang] %}
+          <a href="{{ base_path }}{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
+        <a class="alt" href="{{ base_path }}{{ alt_url }}" lang="{{ h.alt_lang }}" dir="{{ h.alt_dir }}" hreflang="{{ h.alt_lang }}">{{ h.alt_label }}</a>
+      </nav>
+      <button class="theme-btn" type="button" id="theme-btn" aria-label="{{ h.labels.theme }}" title="{{ h.labels.theme }}">
+        <svg class="moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M13.5 9.6A5.6 5.6 0 0 1 6.4 2.5a5.6 5.6 0 1 0 7.1 7.1Z"/></svg>
+        <svg class="sun" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v1.6M8 13.4V15M1 8h1.6M13.4 8H15M3 3l1.1 1.1M11.9 11.9 13 13M3 13l1.1-1.1M11.9 4.1 13 3"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<script>
+  (function () {
+    var btn = document.getElementById("theme-btn");
+    if (!btn) return;
+    btn.addEventListener("click", function () {
+      var root = document.documentElement;
+      var cur = root.getAttribute("data-theme") ||
+        (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      var next = cur === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+  })();
+</script>
+{% comment %} The theme's main.min.js still runs its old "greedy" menu script, which recurses forever when #site-nav is missing. This empty, hidden stub keeps it quiet. {% endcomment %}
+<nav id="site-nav" class="greedy-nav" hidden aria-hidden="true"><button class="hidden" tabindex="-1"></button><ul class="visible-links"></ul><ul class="hidden-links hidden"></ul></nav>

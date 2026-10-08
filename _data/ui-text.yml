@@ -268,3 +268,45 @@ it-IT:
 
 # Another locale
 # --------------
+
+# Arabic
+# -----------------
+ar: &DEFAULT_AR
+  page                       : "صفحة"
+  pagination_previous        : "السابق"
+  pagination_next            : "التالي"
+  breadcrumb_home_label      : "الرئيسية"
+  breadcrumb_separator       : "/"
+  toc_label                  : "في هذه الصفحة"
+  ext_link_label             : "رابط مباشر"
+  less_than                  : "أقل من"
+  minute_read                : "دقيقة قراءة"
+  share_on_label             : "شارك على"
+  meta_label                 : ""
+  tags_label                 : "علامات:"
+  categories_label           : "الفئات:"
+  date_label                 : "تم النشر:"
+  comments_label             : "اترك تعليقا"
+  comments_title             : "التعليقات"
+  more_label                 : "تعرف على المزيد"
+  related_label              : "قد تستمتع أيضًا بـ"
+  follow_label               : "تابع:"
+  feed_label                 : "الخلاصة"
+  powered_by                 : "مشغل بواسطة"
+  website_label              : "موقع"
+  email_label                : "البريد الإلكتروني"
+  recent_posts               : "المشاركات الأخيرة"
+  undefined_wpm              : "معلمة words_per_minute غير معرّفة في _config.yml"
+  comment_form_info          : "لن يتم نشر عنوان بريدك الإلكتروني. الحقول المطلوبة مشار إليها"
+  comment_form_comment_label : "تعليق"
+  comment_form_md_info       : "Markdown مدعوم."
+  comment_form_name_label    : "الاسم"
+  comment_form_email_label   : "عنوان البريد الإلكتروني"
+  comment_form_website_label : "الموقع الإلكتروني (اختياري)"
+  comment_btn_submit         : "إرسال التعليق"
+  comment_btn_submitted      : "تم الإرسال"
+  comment_success_msg        : "شكرًا لتعليقك! سيتم عرضه على الموقع بعد الموافقة عليه."
+  comment_error_msg          : "عذراً، حدث خطأ أثناء الإرسال. تأكد من إكمال جميع الحقول المطلوبة وحاول مرة أخرى."
+  loading_label              : "جار التحميل..."
+ar-SA:
+  <<: *DEFAULT_AR

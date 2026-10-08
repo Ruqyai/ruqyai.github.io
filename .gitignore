@@ -1,2 +1,14 @@
 _site/
 
+
+
+# local Jekyll build
+vendor/
+.bundle/
+Gemfile.lock
+_site/
+.jekyll-cache/
+.env
+
+# private notes: never commit
+private/

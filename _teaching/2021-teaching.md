@@ -39,7 +39,7 @@ How to Reduce the Costs of LLMs
 [Watch the Recording](https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L)
 
 <a href="https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L">
-  <img src="https://raw.githubusercontent.com/Ruqyai/ruqyai.github.io/main/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
+  <img src="/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
 </a>
 
 ## The Presentation
@@ -57,7 +57,7 @@ How to Reduce the Costs of LLMs
 [Watch the Recording](https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L)
 
 <a href="https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L">
-  <img src="https://raw.githubusercontent.com/Ruqyai/ruqyai.github.io/main/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
+  <img src="/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
 </a>
 
 ## The Presentation
@@ -75,7 +75,7 @@ How to Reduce the Costs of LLMs
 [Watch the Recording](https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L)
 
 <a href="https://www.youtube.com/live/7FhtfagJdCo?si=1MAgHZ7r1vX2-F1L">
-  <img src="https://raw.githubusercontent.com/Ruqyai/ruqyai.github.io/main/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
+  <img src="/images/youtube.png" alt="YouTube" style="width: 40px; height: 30px;">
 </a>
 
 ## The Presentation
