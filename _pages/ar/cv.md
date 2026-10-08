@@ -39,5 +39,5 @@ redirect_from:
 
 * خبيرة مطوري Google في مجالي الذكاء الاصطناعي وGoogle Cloud · Google Cloud Champion Innovator
 * جائزة TensorFlow Contributor لعام 2021، الشرق الأوسط وأفريقيا
-* بانية مجتمعات تقنية: أسستُ Women Techmakers جدة وقدتُه (2019 – 2024)، ونظّمتُ ودرّبتُ مع GDG Cloud Saudi وGDG جدة
+* بانية مجتمعات تقنية: أسستُ مجتمعات تقنية للمطورين وللنساء في التقنية في السعودية، وقدتُها ونمّيتها منذ 2019، منظِّمةً ومدرِّبةً ومرشدة
 * مرشدة في Google for Startups Accelerator MENA

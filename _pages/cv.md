@@ -39,5 +39,5 @@ AI engineer and researcher working across production GenAI, AI safety research a
 
 * 2× Google Developer Expert (AI, Google Cloud) · Google Cloud Champion Innovator
 * TensorFlow Contributor Award 2021, Middle East & Africa
-* Community builder: founded and led Women Techmakers Jeddah (2019 – 2024); organizer and trainer with GDG Cloud Saudi and GDG Jeddah
+* Community builder: founded, led and grew tech communities for developers and for women in tech in Saudi Arabia since 2019, as an organizer, trainer and mentor
 * Mentor, Google for Startups Accelerator MENA
