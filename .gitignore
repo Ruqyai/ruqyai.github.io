@@ -12,3 +12,4 @@ _site/
 
 # private notes: never commit
 private/
+.DS_Store
