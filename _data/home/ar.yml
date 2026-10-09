@@ -49,13 +49,14 @@ hero:
     - { label: LinkedIn, url: "https://www.linkedin.com/in/rbinsafi" }
     - { label: GitHub, url: "https://github.com/Ruqyai" }
     - { label: Hugging Face, url: "https://huggingface.co/Ruqiya" }
+    - { label: Google Scholar, url: "https://scholar.google.com/citations?user=g4qNnFkAAAAJ" }
     - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
     - { label: Medium, url: "https://medium.com/@rbinsafi" }
     - { label: X, url: "https://x.com/rbinsafi" }
   facts:
     - { b: "أكثر من 130", t: "محاضرة وورشة وجلسة إرشاد في 10 دول" }
     - { b: خبيرة مطوري Google, t: "· في مجالين" }
-    - { b: ICLR 2025, t: "· مؤلفة مشاركة في MMTEB" }
+    - { b: EleutherAI, t: "· SOAR 2026، من بين أكثر من 3,500 متقدم" }
 
 now:
   eyebrow: "2026"
@@ -68,7 +69,7 @@ now:
     - when: يناير – يونيو 2026
       title: Algoverse
       sub: زميلة بحثية في أمان الذكاء الاصطناعي
-      text: واحدة من 30 زميلاً اختيروا من حول العالم. تتبّع الدوائر الداخلية المسؤولة عن الرفض وكسر الحماية (Jailbreak) في Gemma 3.
+      text: واحدة من 30 زميلاً اختيروا من حول العالم، بإرشاد Callum McDougall من Google DeepMind. تتبّع الدوائر الداخلية المسؤولة عن الرفض وكسر الحماية (Jailbreak) في Gemma 3.
     - when: 2024 – 2026
       title: ماجستير إدارة الأعمال في الذكاء الاصطناعي
       sub: Walbrook Institute London
@@ -85,7 +86,7 @@ work:
       go: arxiv.org/abs/2502.13595
     - kind: نموذج · عرض تجريبي
       title: RuqLM
-      text: عائلة نماذج لغوية عربية صغيرة من 3 إلى 30 مليون معامل، بأوزان منشورة.
+      text: نماذج لغوية عربية درّبتها من الصفر بأحجام من 3 إلى 30 مليون معامل، لأقيس أي جوانب العربية يتعلمها النموذج الصغير أولاً، من الإملاء والمطابقة إلى تماسك القصة. بأوزان منشورة.
       url: https://ruqlm.web.app
       go: ruqlm.web.app
     - kind: مكتبة · PyPI
@@ -95,7 +96,7 @@ work:
       go: pip install ruqia
     - kind: تطبيق · PaLM 2
       title: ChatBard
-      text: من أوائل التطبيقات العربية على PaLM 2، وأشاد به حساب Google Cloud Tech، وحصل على 49 نجمة في GitHub.
+      text: من أوائل التطبيقات العربية على PaLM 2، وأشاد به حساب Google Cloud Tech.
       url: https://github.com/Ruqyai/ChatBard
       go: github.com/Ruqyai/ChatBard
     - kind: نماذج · ضبط دقيق
@@ -103,11 +104,11 @@ work:
       text: ضبط دقيق لنموذجي Gemma 2 بحجمي 2B و9B على بيانات عربية بتقنية LoRA، موزعاً على 8 وحدات GPU.
       url: https://huggingface.co/Ruqiya
       go: huggingface.co/Ruqiya
-    - kind: وكلاء · Google ADK
-      title: وكلاء التسويق
-      text: وكلاء يكتبون محتوى LinkedIn وينشرونه ويتواصلون فيما بينهم عبر A2A، باستخدام Gemini 3 Pro.
-      url: https://github.com/Ruqyai/Automated-Marketing-Social-Media-System
-      go: github.com/Ruqyai
+    - kind: قابلية التفسير · TPU
+      title: داخل Gemma 3
+      text: دفتر Colab مفتوح يقرأ ما يحدث داخل Gemma 3 على TPU مجانية، بعدسة اللوجيت واتجاه اللغة وتوجيه التفعيلات بالعربية والإنجليزية.
+      url: /ar/posts/2026/10/gemma3-tpu-activations/
+      go: المقال والدفتر
 
 experience:
   eyebrow: 2017 – 2026
@@ -143,7 +144,7 @@ honors:
     - { title: متحدثة دولية, text: "محاضرات لمجتمعات المطورين في نيجيريا والجزائر وتركيا والبرازيل والولايات المتحدة وكندا وبولندا والمملكة المتحدة وغينيا" }
     - { title: مرشدة في Google for Startups Accelerator MENA, text: أرشدت أكثر من 50 شركة ناشئة }
     - { title: قيادة المجتمعات التقنية, text: "أسستُ وقدتُ مجتمعات تقنية للمطورين وللنساء في التقنية، منها Women Techmakers جدة وGDG Cloud Saudi، وشاركتُ في تأسيس TFUG Saudi. وعضوة بارزة في مجتمعات Fihm AI وبيان وغيرها، وتنوّعت مشاركاتي فيها بين القيادة وتنظيم الفعاليات والتدريب والإرشاد وصناعة المحتوى التقني" }
-    - { title: متحدثة ومدربة ومحكّمة, text: 'تقدير من 39 جهة، منها أكاديمية STC وأكاديمية طويق وجامعة الملك فهد للبترول والمعادن وجامعة الملك سعود · <a href="/ar/certificates/">61 شهادة</a>' }
+    - { title: متحدثة ومدربة ومحكّمة, text: 'بدعوة من أكاديمية STC وأكاديمية طويق وجامعة الملك فهد للبترول والمعادن وجامعة الملك سعود وغيرها · <a href="/ar/certificates/">الشهادات</a>' }
 
 writing:
   eyebrow: المدونة

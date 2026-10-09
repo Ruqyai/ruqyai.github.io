@@ -54,13 +54,14 @@ hero:
     - { label: LinkedIn, url: "https://www.linkedin.com/in/rbinsafi" }
     - { label: GitHub, url: "https://github.com/Ruqyai" }
     - { label: Hugging Face, url: "https://huggingface.co/Ruqiya" }
+    - { label: Google Scholar, url: "https://scholar.google.com/citations?user=g4qNnFkAAAAJ" }
     - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
     - { label: Medium, url: "https://medium.com/@rbinsafi" }
     - { label: X, url: "https://x.com/rbinsafi" }
   facts:
     - { b: "130+", t: "talks, workshops & mentoring sessions · 10 countries" }
     - { b: "2×", t: Google Developer Expert }
-    - { b: ICLR 2025, t: "· MMTEB co-author" }
+    - { b: EleutherAI, t: "· SOAR 2026, selected from 3,500+" }
 
 now:
   eyebrow: "2026"
@@ -73,7 +74,7 @@ now:
     - when: Jan – Jun 2026
       title: Algoverse
       sub: AI Safety Research Fellow
-      text: One of 30 fellows selected worldwide. Circuit tracing of refusal and jailbreak behaviour in Gemma 3.
+      text: One of 30 fellows selected worldwide, mentored by Callum McDougall (Google DeepMind). Circuit tracing of refusal and jailbreak behaviour in Gemma 3.
     - when: 2024 – 2026
       title: MBA in Artificial Intelligence
       sub: Walbrook Institute London
@@ -90,7 +91,7 @@ work:
       go: arxiv.org/abs/2502.13595
     - kind: Model · Demo
       title: RuqLM
-      text: A family of small Arabic language models, from 3M to 30M parameters, with public weights.
+      text: Arabic language models trained from scratch at 3M to 30M parameters, to measure which part of Arabic a small model learns first, from spelling and agreement to coherent stories. Public weights.
       url: https://ruqlm.web.app
       go: ruqlm.web.app
     - kind: Library · PyPI
@@ -100,7 +101,7 @@ work:
       go: pip install ruqia
     - kind: App · PaLM 2
       title: ChatBard
-      text: One of the first Arabic apps on PaLM 2. Featured by Google Cloud Tech, with 49 stars on GitHub.
+      text: One of the first Arabic apps on PaLM 2, featured by Google Cloud Tech.
       url: https://github.com/Ruqyai/ChatBard
       go: github.com/Ruqyai/ChatBard
     - kind: Models · Fine-tuning
@@ -108,11 +109,11 @@ work:
       text: Gemma 2 2B and 9B fine-tuned on Arabic data with LoRA, trained across 8 GPUs.
       url: https://huggingface.co/Ruqiya
       go: huggingface.co/Ruqiya
-    - kind: Agents · Google ADK
-      title: Marketing agents
-      text: Agents that write and post LinkedIn content and talk to each other over A2A, running on Gemini 3 Pro.
-      url: https://github.com/Ruqyai/Automated-Marketing-Social-Media-System
-      go: github.com/Ruqyai
+    - kind: Interpretability · TPU
+      title: Look inside Gemma 3
+      text: An open Colab notebook that reads Gemma 3's internals on a free TPU, with logit lens, a language direction and activation steering in English and Arabic.
+      url: /posts/2026/10/gemma3-tpu-activations/
+      go: Article and notebook
 
 experience:
   eyebrow: 2017 – 2026
@@ -149,7 +150,7 @@ honors:
     - { title: International speaker, text: "Talks for developer communities in Nigeria, Algeria, Türkiye, Brazil, the USA, Canada, Poland, the UK and Guinea" }
     - { title: "Mentor, Google for Startups Accelerator MENA", text: 50+ startups mentored }
     - { title: Community leadership, text: "Founded and led tech communities for developers and for women in tech, including Women Techmakers Jeddah and GDG Cloud Saudi, and co-founded TFUG Saudi. A leading member of Fihm AI, Bayan and other communities. Roles ranged from leading and organizing events to training, mentoring and creating technical content" }
-    - { title: "Speaker, trainer and judge", text: 'Recognized by 39 organizations, including STC Academy, Tuwaiq Academy, KFUPM and King Saud University · <a href="/certificates/">61 certificates</a>' }
+    - { title: "Speaker, trainer and judge", text: 'Invited by STC Academy, Tuwaiq Academy, KFUPM, King Saud University and others · <a href="/certificates/">Certificates</a>' }
 
 writing:
   eyebrow: Blog
