@@ -58,6 +58,7 @@ hero:
     - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
     - { label: Medium, url: "https://medium.com/@rbinsafi" }
     - { label: X, url: "https://x.com/rbinsafi" }
+    - { label: YouTube, url: "https://www.youtube.com/channel/UCtQeozj0BK_2uv6D-LTtknA" }
   facts:
     - { b: "130+", t: "talks, workshops & mentoring sessions · 10 countries" }
     - { b: "2×", t: Google Developer Expert }

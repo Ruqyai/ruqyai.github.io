@@ -53,6 +53,7 @@ hero:
     - { label: Kaggle, url: "https://www.kaggle.com/ruqiyas" }
     - { label: Medium, url: "https://medium.com/@rbinsafi" }
     - { label: X, url: "https://x.com/rbinsafi" }
+    - { label: YouTube, url: "https://www.youtube.com/channel/UCtQeozj0BK_2uv6D-LTtknA" }
   facts:
     - { b: "أكثر من 130", t: "محاضرة وورشة وجلسة إرشاد في 10 دول" }
     - { b: خبيرة مطوري Google, t: "· في مجالين" }
