@@ -88,6 +88,12 @@ analytics:
     tracking_id          :
 
 
+# Public read counter and "reading now" on posts (Firebase Realtime Database).
+# Leave empty to turn it off.
+reader_stats:
+  database_url           : "https://ruqyai-site-default-rtdb.europe-west1.firebasedatabase.app"
+
+
 # Site Author
 author:
   name             : "Ruqiya Bin Safi"
