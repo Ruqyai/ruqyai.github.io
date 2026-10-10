@@ -7,16 +7,17 @@
 {% if page.layout == "home" %}{% assign ss_show = true %}{% endif %}
 {% if ss_show %}
 <style>
-  .site-stats[hidden] { display: none !important; }
-  .site-stats { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px; }
-  .site-stats .ss-flags { display: inline-flex; gap: 5px; }
-  .site-stats .ss-live { display: inline-flex; align-items: center; gap: 6px; }
-  .site-stats .ss-live img { width: 20px; height: 15px; border-radius: 2px; display: block; margin-inline-end: 2px; }
-  .site-stats .ss-live span { display: inline-flex; align-items: center; }
-  .site-stats .ss-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #2e9d5b; margin-inline-end: 4px; }
-  .site-stats .ss-flags img { width: 20px; height: 15px; border-radius: 2px; display: block; }
+  .site-stats[hidden], .site-stats [hidden] { display: none !important; }
+  .site-stats { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .site-stats .ss-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; }
+  .site-stats .ss-views { font-variant-numeric: tabular-nums; }
+  .site-stats .ss-flags, .site-stats .ss-live { display: inline-flex; align-items: center; gap: 6px; }
+  .site-stats .ss-flags img, .site-stats .ss-live img { width: 18px; height: 13px; border-radius: 2px; display: block; box-shadow: 0 0 0 1px rgba(127, 127, 127, .35); }
+  .site-stats .ss-live span { display: inline-flex; align-items: center; gap: 4px; }
+  .site-stats .ss-online-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; }
+  .site-stats .ss-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #2e9d5b; }
 </style>
-<span class="site-stats" id="site-stats" hidden><span class="ss-views"></span><span class="ss-flags"></span><span class="ss-online" hidden>· <span class="ss-dot" aria-hidden="true"></span><span class="ss-online-n"></span><span class="ss-live"></span></span></span>
+<span class="site-stats" id="site-stats" hidden><span class="ss-row"><span class="ss-views"></span><span class="ss-flags"></span></span><span class="ss-online-row ss-online" hidden><span class="ss-dot" aria-hidden="true"></span><span class="ss-online-n"></span><span class="ss-live"></span></span></span>
 {% endif %}
 <script type="module">
   import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
