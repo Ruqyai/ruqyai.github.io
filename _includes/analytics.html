@@ -6,6 +6,27 @@
   gtag('js', new Date());
 
   gtag('config', 'G-1KHF012PEY');
+
+  // Count clicks on YouTube links as a "video_click" event, one row per video in GA4.
+  (function () {
+    function track(e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var url;
+      try { url = new URL(a.href); } catch (err) { return; }
+      var host = url.hostname.replace(/^(www|m)\./, '');
+      if (host !== 'youtube.com' && host !== 'youtu.be') return;
+      var id = host === 'youtu.be' ? url.pathname.slice(1) : (url.searchParams.get('v') || url.pathname);
+      gtag('event', 'video_click', {
+        video_id: id,
+        video_url: a.href,
+        link_text: (a.textContent || '').trim().slice(0, 100),
+        page_title: document.title
+      });
+    }
+    document.addEventListener('click', track);
+    document.addEventListener('auxclick', function (e) { if (e.button === 1) track(e); });
+  })();
 </script>
 
 {% if site.analytics.provider and page.analytics != false %}
