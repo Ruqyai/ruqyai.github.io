@@ -1,0 +1,101 @@
+{% comment %}
+  Site-wide visit counter, visitors online and top visitor countries, backed by Firebase Realtime Database.
+  Counts one visit per browser session on any page; shows the total and flags on the home page only.
+{% endcomment %}
+{% if site.reader_stats.database_url %}
+{% assign ss_show = false %}
+{% if page.layout == "home" %}{% assign ss_show = true %}{% endif %}
+{% if ss_show %}
+<style>
+  .site-stats[hidden] { display: none !important; }
+  .site-stats { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+  .site-stats .ss-flags { display: inline-flex; gap: 5px; }
+  .site-stats .ss-live { display: inline-flex; align-items: center; gap: 6px; }
+  .site-stats .ss-live img { width: 20px; height: 15px; border-radius: 2px; display: block; margin-inline-end: 2px; }
+  .site-stats .ss-live span { display: inline-flex; align-items: center; }
+  .site-stats .ss-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #2e9d5b; margin-inline-end: 4px; }
+  .site-stats .ss-flags img { width: 20px; height: 15px; border-radius: 2px; display: block; }
+</style>
+<span class="site-stats" id="site-stats" hidden><span class="ss-views"></span><span class="ss-flags"></span><span class="ss-online" hidden>· <span class="ss-dot" aria-hidden="true"></span><span class="ss-online-n"></span><span class="ss-live"></span></span></span>
+{% endif %}
+<script type="module">
+  import { initializeApp, getApps, getApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getDatabase, ref, onValue, set, push, onDisconnect, increment } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+  const ar = {% if page.lang == "ar" %}true{% else %}false{% endif %};
+  const db = getDatabase(getApps().length ? getApp() : initializeApp({ databaseURL: "{{ site.reader_stats.database_url }}" }));
+
+  /* Visitor country from Cloudflare's public trace endpoint (no key, no cookies), cached per session. */
+  let cached = null;
+  try { cached = sessionStorage.getItem("ss:cc"); } catch (e) {}
+  const country = cached ? Promise.resolve(cached) : fetch("https://www.cloudflare.com/cdn-cgi/trace")
+    .then((r) => r.text())
+    .then((t) => {
+      const cc = (t.match(/^loc=([A-Z]{2})$/m) || [])[1];
+      const ok = cc && cc !== "XX" && cc !== "T1" ? cc : "--";
+      try { sessionStorage.setItem("ss:cc", ok); } catch (e) {}
+      return ok;
+    })
+    .catch(() => "--");
+
+  /* One visit per browser session. */
+  let counted = false;
+  try { counted = sessionStorage.getItem("ss:visit") === "1"; } catch (e) {}
+  if (!counted) {
+    set(ref(db, "site/views"), increment(1))
+      .then(() => { try { sessionStorage.setItem("ss:visit", "1"); } catch (e) {} })
+      .catch(() => {});
+    country.then((cc) => { if (cc !== "--") return set(ref(db, "site/countries/" + cc), increment(1)); }).catch(() => {});
+  }
+
+  /* Online now: one entry per open tab on any page holding its country, removed by the server when the tab closes. */
+  const me = push(ref(db, "site/online"));
+  country.then((cc) => {
+    onValue(ref(db, ".info/connected"), (s) => {
+      if (s.val() === true) onDisconnect(me).remove().then(() => set(me, cc)).catch(() => {});
+    });
+  });
+{% if ss_show %}
+  const box = document.getElementById("site-stats");
+  const fmt = (n) => n.toLocaleString("en-US");
+  onValue(ref(db, "site/views"), (s) => {
+    const n = s.val() || 0;
+    if (!n) return;
+    box.querySelector(".ss-views").textContent = ar ? fmt(n) + " زيارة" : fmt(n) + " visits";
+    box.hidden = false;
+  });
+
+  let names = null;
+  try { names = new Intl.DisplayNames([ar ? "ar" : "en"], { type: "region" }); } catch (e) {}
+  const flag = (cc, n) => {
+    const img = document.createElement("img");
+    const name = (names && names.of(cc)) || cc;
+    img.src = "https://flagcdn.com/40x30/" + cc.toLowerCase() + ".png";
+    img.alt = name;
+    img.title = name + " · " + fmt(n);
+    img.loading = "lazy";
+    return img;
+  };
+
+  /* Online now, with a flag and count per country. */
+  onValue(ref(db, "site/online"), (s) => {
+    const n = s.size;
+    const by = {};
+    s.forEach((c) => { const cc = c.val(); if (typeof cc === "string" && /^[A-Z]{2}$/.test(cc)) by[cc] = (by[cc] || 0) + 1; });
+    box.querySelector(".ss-online").hidden = n < 1;
+    box.querySelector(".ss-online-n").textContent = ar ? fmt(n) + " متصل الآن" : fmt(n) + " online";
+    box.querySelector(".ss-live").replaceChildren(...Object.entries(by).sort((a, b) => b[1] - a[1]).map(([cc, k]) => {
+      const span = document.createElement("span");
+      span.append(flag(cc, k), fmt(k));
+      return span;
+    }));
+  });
+
+  /* Top 7 countries as flags; name and count on hover. */
+  onValue(ref(db, "site/countries"), (s) => {
+    const top = Object.entries(s.val() || {}).sort((a, b) => b[1] - a[1]).slice(0, 7);
+    box.querySelector(".ss-flags").replaceChildren(...top.map(([cc, n]) => flag(cc, n)));
+  });
+{% endif %}
+</script>
+{% endif %}
