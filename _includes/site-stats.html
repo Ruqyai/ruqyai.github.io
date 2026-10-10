@@ -84,8 +84,8 @@
     const n = s.size;
     const by = {};
     s.forEach((c) => { const cc = c.val(); if (typeof cc === "string" && /^[A-Z]{2}$/.test(cc)) by[cc] = (by[cc] || 0) + 1; });
-    box.querySelector(".ss-online").hidden = n < 1;
-    box.querySelector(".ss-online-n").textContent = ar ? fmt(n) + " متصل الآن" : fmt(n) + " online";
+    box.querySelector(".ss-online").hidden = n < 2;   /* hide when the viewer would only see themselves */
+    box.querySelector(".ss-online-n").textContent = ar ? fmt(n) + " متصلون الآن" : fmt(n) + " online";
     box.querySelector(".ss-live").replaceChildren(...Object.entries(by).sort((a, b) => b[1] - a[1]).map(([cc, k]) => {
       const span = document.createElement("span");
       span.append(flag(cc, k), fmt(k));

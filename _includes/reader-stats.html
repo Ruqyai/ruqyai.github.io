@@ -11,7 +11,7 @@
   .reader-stats .rs-dot { display: inline-block; width: .55em; height: .55em; border-radius: 50%; background: #2e9d5b; vertical-align: middle; }
 </style>
 <p class="page__meta reader-stats" id="reader-stats" data-slug="{{ rs_slug }}" hidden>
-  <i class="fa fa-eye" aria-hidden="true"></i> <span class="rs-views"></span>
+  <span class="rs-reads" hidden><i class="fa fa-eye" aria-hidden="true"></i> <span class="rs-views"></span></span>
   <span class="rs-online" hidden><span class="rs-sep">·</span><span class="rs-dot" aria-hidden="true"></span> <span class="rs-online-n"></span></span>
 </p>
 <script type="module">
@@ -22,6 +22,16 @@
   const slug = box.dataset.slug;
   const ar = {% if page.lang == "ar" %}true{% else %}false{% endif %};
   const fmt = (n) => n.toLocaleString("en-US");
+  /* Only show numbers that help: reads from 100 up, "reading now" from 2 readers up. Counting always runs. */
+  const MIN_READS = 100, MIN_ONLINE = 2;
+  let reads = 0, online = 0;
+  const render = () => {
+    const showReads = reads >= MIN_READS, showOnline = online >= MIN_ONLINE;
+    box.querySelector(".rs-reads").hidden = !showReads;
+    box.querySelector(".rs-online").hidden = !showOnline;
+    box.querySelector(".rs-sep").hidden = !showReads;
+    box.hidden = !showReads && !showOnline;
+  };
   const db = getDatabase(getApps().length ? getApp() : initializeApp({ databaseURL: "{{ site.reader_stats.database_url }}" }));
 
   /* Total reads: count once per browser session, then show the live total. */
@@ -34,10 +44,9 @@
       .catch(() => {});
   }
   onValue(viewsRef, (s) => {
-    const n = s.val() || 0;
-    if (!n) return;
-    box.querySelector(".rs-views").textContent = ar ? fmt(n) + " قراءة" : fmt(n) + (n === 1 ? " read" : " reads");
-    box.hidden = false;
+    reads = s.val() || 0;
+    box.querySelector(".rs-views").textContent = ar ? fmt(reads) + " قراءة" : fmt(reads) + " reads";
+    render();
   });
 
   /* Reading now: one entry per open tab, removed by the server when the tab closes. */
@@ -47,12 +56,9 @@
     if (s.val() === true) onDisconnect(me).remove().then(() => set(me, true)).catch(() => {});
   });
   onValue(onlineRef, (s) => {
-    const n = s.size;
-    const el = box.querySelector(".rs-online");
-    el.hidden = n < 1;
-    box.querySelector(".rs-online-n").textContent = ar
-      ? fmt(n) + (n === 1 ? " يقرأ الآن" : " يقرؤون الآن")
-      : fmt(n) + " reading now";
+    online = s.size;
+    box.querySelector(".rs-online-n").textContent = ar ? fmt(online) + " يقرؤون الآن" : fmt(online) + " reading now";
+    render();
   });
 </script>
 {% endif %}
