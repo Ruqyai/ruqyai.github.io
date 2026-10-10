@@ -33,7 +33,7 @@
   const fmt = (n) => n.toLocaleString("en-US");
   const db = getDatabase(initializeApp({ databaseURL: "{{ site.reader_stats.database_url }}" }));
 
-  // Total reads: count once per browser session, then show the live total.
+  /* Total reads: count once per browser session, then show the live total. */
   const viewsRef = ref(db, "views/" + slug);
   let counted = false;
   try { counted = sessionStorage.getItem("rs:" + slug) === "1"; } catch (e) {}
@@ -41,7 +41,7 @@
     set(viewsRef, increment(1))
       .then(() => { try { sessionStorage.setItem("rs:" + slug, "1"); } catch (e) {} })
       .catch(() => {});
-    // Country of the read, from Cloudflare's public trace endpoint (no key, no cookies).
+    /* Country of the read, from Cloudflare's public trace endpoint (no key, no cookies). */
     fetch("https://www.cloudflare.com/cdn-cgi/trace")
       .then((r) => r.text())
       .then((t) => {
@@ -57,7 +57,7 @@
     box.hidden = false;
   });
 
-  // Top 7 countries, folded by default.
+  /* Top 7 countries, folded by default. */
   let names = null;
   try { names = new Intl.DisplayNames([ar ? "ar" : "en"], { type: "region" }); } catch (e) {}
   onValue(ref(db, "countries/" + slug), (s) => {
@@ -77,7 +77,7 @@
     }));
   });
 
-  // Reading now: one entry per open tab, removed by the server when the tab closes.
+  /* Reading now: one entry per open tab, removed by the server when the tab closes. */
   const onlineRef = ref(db, "online/" + slug);
   const me = push(onlineRef);
   onValue(ref(db, ".info/connected"), (s) => {
