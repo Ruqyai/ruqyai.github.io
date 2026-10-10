@@ -8,7 +8,8 @@
 {% if ss_show %}
 <style>
   .site-stats[hidden], .site-stats [hidden] { display: none !important; }
-  .site-stats { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+  .site-stats { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex-basis: 100%; order: -1; padding-bottom: 14px; margin-bottom: 4px; border-bottom: 1px solid rgba(127, 127, 127, .18); }
+  @media (min-width: 900px) { .site-stats .ss-flags img, .site-stats .ss-live img { width: 24px; height: 17px; } }
   .site-stats .ss-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 10px; }
   .site-stats .ss-views { font-variant-numeric: tabular-nums; }
   .site-stats .ss-flags, .site-stats .ss-live { display: inline-flex; align-items: center; gap: 6px; }
