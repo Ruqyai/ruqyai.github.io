@@ -1,6 +1,17 @@
 # Certificates from the Accredible wallet (credential.net/profile/1473594), with English and Arabic labels.
 # Generated from private/credentials.json; one certificate that shows a student ID number is left out on purpose.
 
+- issuer_en: "Google"
+  issuer_ar: "Google"
+  title_en: "Google Developer Experts · 5 years of outstanding contributions (2020 – 2026)"
+  title_ar: "خبراء مطوري Google · تقدير خمس سنوات من المساهمات المتميزة (2020 – 2026)"
+  date: 2026-10-12
+  thumb: /images/certificates/gde-5-years-2026-thumb.webp
+  full: /images/certificates/gde-5-years-2026.webp
+  width: 364
+  height: 520
+  verified: false
+  link: ""
 - issuer_en: "EleutherAI"
   issuer_ar: "EleutherAI"
   title_en: "Certificate of Participation · Summer of Open AI Research (SOAR 2026)"
