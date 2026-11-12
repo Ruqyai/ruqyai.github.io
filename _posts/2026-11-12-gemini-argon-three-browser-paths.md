@@ -75,7 +75,7 @@ I sent the same instruction again, and it worked. Playwright opened **a separate
 
 The trade-off is context. With MCP, every tool call and every page snapshot goes into the main conversation. That's fine for a form, but it adds up over a long session. In exchange you get fine-grained control. Some browser MCP servers, such as [Chrome DevTools MCP](https://github.com/ChromeDevTools/chrome-devtools-mcp), also expose network requests, console errors, and performance traces, which is what you want when you're debugging a web app.
 
-One note: the claim that "MCP always needs a fresh browser" is no longer quite true. Both Playwright MCP and Chrome DevTools MCP now document ways to connect to a browser you already have open, so check their READMEs.
+One note: the claim that "MCP always needs a fresh browser" is no longer quite true. Playwright MCP has an `--extension` mode that connects to tabs in a Chrome or Edge window you already have open, through the Playwright Extension, and Chrome DevTools MCP documents similar options. Check their READMEs.
 
 ## 3. macOS Apple Events
 
@@ -102,6 +102,8 @@ I closed the Playwright window, opened the form in my normal Chrome, and ran the
 This is the only one of the three routes that worked directly inside the browser I actually use, with my extensions and sign-ins, and without restarting anything. **That is also why it is the riskiest.**
 
 > **Before you turn this on:** while "Allow JavaScript from Apple Events" is enabled, any local app that has macOS permission to control Chrome can run JavaScript in any tab, including tabs where you are signed in to email, banking, or work tools. Turn it on for the task and turn it off afterwards. Prefer a separate Chrome profile with no personal sign-ins for experiments.
+
+**A middle ground** between routes 2 and 3, suggested by a reader on Bluesky: give the agent its own browser profile that persists between runs and is signed in only to the accounts the task needs. Playwright MCP already works this way by default, keeping a persistent profile for each workspace. `--isolated` keeps the profile in memory and discards it when the browser closes, and `--user-data-dir` lets you choose where the profile lives, for example one per project.
 
 The risk goes beyond this one setting. A web page an agent reads can carry hidden instructions of its own. For a closer look at prompt injection, and at one way to put a human approval step in front of an agent, see Jimmy Liao's [Gemini 4 Under the Microscope: Red-Teaming AI Agents](https://dev.to/gde/gemini-4-under-the-microscope-red-teaming-ai-agents-and-deterministic-dual-port-remote-control-4567).
 
