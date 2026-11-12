@@ -23,7 +23,7 @@ AI engineer and researcher working across production GenAI, AI safety research a
 
 ## Experience
 
-* **Fyler** (2023 – 2026): AI Engineer → Senior AI Engineer → Head of Saudi Arabia → AI Product Manager. Built the RAG pipeline behind a GenAI search engine for MENA, then led the product and the team.
+* **Fyler** (2023 – 2026): AI Engineer → Senior AI Engineer → Head of Saudi Arabia → AI Product Manager. Helped build a GenAI search engine for MENA.
 * **Success Partners** (2021 – 2022): Founder & CEO of a technical-events startup.
 * **Bayan** (2020 – 2022): R&D in Arabic social network and sentiment analysis.
 * **Earlier** (2017 – 2022): ML consultant, AI instructor, freelance ML engineer.

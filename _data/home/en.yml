@@ -44,7 +44,7 @@ hero:
     - [in, 0.08]
     - [Arabic., 0.97]
   bio: >-
-    I built the AI search engine at Fyler from its first architecture to product ownership.
+    At Fyler I helped build a GenAI search engine.
     Now I do AI safety research in mechanistic interpretability with <em>EleutherAI</em>.
     I am a 2× Google Developer Expert and I have spent years teaching AI in Arabic.
   cv_label: CV (PDF)
@@ -123,7 +123,7 @@ experience:
     - when: 2023 – 2026
       title: Fyler
       org: GenAI search engine for MENA
-      text: Joined as an early engineer. Designed the RAG pipeline behind the core search product, then led the product and the team.
+      text: Joined as an early engineer and helped build the search engine.
       ladder:
         - { role: AI Engineer, date: Sep 2023 }
         - { role: Senior AI Engineer, date: Feb 2024 }
